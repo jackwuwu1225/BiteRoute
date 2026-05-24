@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 import folium
 from branca.element import Element as BrancaElement
 
-from core.constants import GLOW_LAYERS, MARKER_PALETTE, NEON_CYAN, SHAPE_ZH_NAMES
+from core.constants import CLOSED_SHAPES, GLOW_LAYERS, MARKER_PALETTE, NEON_CYAN, SHAPE_ZH_NAMES
 from core.optimizer import Candidate
 
 
@@ -21,7 +22,7 @@ def build_map(chosen: list[Candidate], shape_name: str) -> str:
     zh_name = SHAPE_ZH_NAMES.get(shape_name, shape_name)
     _inject_overlay(m, zh_name)
     _add_markers(m, chosen)
-    _add_glow_polyline(m, chosen)
+    _add_glow_polyline(m, chosen, shape_name)
 
     return m._repr_html_()
 
@@ -45,50 +46,38 @@ def _inject_overlay(m: folium.Map, zh_name: str) -> None:
 def _add_markers(m: folium.Map, chosen: list[Candidate]) -> None:
     for idx, r in enumerate(chosen):
         color = MARKER_PALETTE[idx % len(MARKER_PALETTE)]
+        stars = "★" * round(r.rating) + "☆" * (5 - round(r.rating))
 
         popup_html = (
-            "<div style='font-family:system-ui,sans-serif;min-width:160px;padding:4px;'>"
+            "<div style='font-family:system-ui,sans-serif;min-width:160px;padding:6px;'>"
             f"<b style='font-size:13px;'>{r.name}</b><br>"
-            f"<span style='color:#888;'>站點 #{idx + 1}</span><br>"
-            f"💰 &nbsp;{int(r.price)}<br>"
-            f"⭐ &nbsp;{r.rating}"
+            f"<span style='color:#888;font-size:11px;'>站點 #{idx + 1}</span><br>"
+            f"<span style='color:#facc15;'>{stars}</span> "
+            f"<span style='color:#888;font-size:11px;'>{r.rating}</span><br>"
+            f"<span style='color:#00e5ff;'>&#36; {int(r.price)}</span>"
             "</div>"
         )
 
-        icon_html = (
-            f"<div style='"
-            f"width:30px;height:30px;border-radius:50%;"
-            f"background:{color};border:2px solid rgba(255,255,255,0.55);"
-            f"box-shadow:0 0 10px {color};"
-            f"color:#0a0a0a;font-weight:800;font-size:13px;"
-            f"font-family:system-ui,sans-serif;"
-            f"display:flex;align-items:center;justify-content:center;'>"
-            f"{idx + 1}</div>"
-        )
-
-        folium.Marker(
+        folium.CircleMarker(
             location=[r.lat, r.lng],
+            radius=12,
+            color="rgba(255,255,255,0.55)",
+            weight=2,
+            fill=True,
+            fill_color=color,
+            fill_opacity=0.9,
             popup=folium.Popup(popup_html, max_width=230),
-            tooltip=folium.Tooltip(
-                text=f"{r.name}　💰{int(r.price)}",
-                permanent=True,
-                sticky=False,
-            ),
-            icon=folium.DivIcon(
-                html=icon_html,
-                icon_size=(30, 30),
-                icon_anchor=(15, 15),
-            ),
+            tooltip=f"#{idx + 1} {r.name}",
         ).add_to(m)
 
 
-def _add_glow_polyline(m: folium.Map, chosen: list[Candidate]) -> None:
-    route_coords = [[c.lat, c.lng] for c in chosen]
-    route_coords.append(route_coords[0])
+def _add_glow_polyline(m: folium.Map, chosen: list[Candidate], shape_name: str) -> None:
+    coords = [[c.lat, c.lng] for c in chosen]
+    draw_coords = coords + [coords[0]] if shape_name in CLOSED_SHAPES else coords
 
     for weight, opacity in GLOW_LAYERS:
         folium.PolyLine(
-            route_coords,
+            draw_coords,
             color=NEON_CYAN,
             weight=weight,
             opacity=opacity,

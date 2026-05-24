@@ -8,12 +8,25 @@ from models.schemas import RouteRequest, RouteResponse
 
 router = APIRouter(prefix="/api/v1")
 
-
 def _open_points(tpoints: list[tuple[float, float]]) -> list[tuple[float, float]]:
     if len(tpoints) > 1 and tpoints[0] == tpoints[-1]:
         return list(tpoints[:-1])
     return list(tpoints)
 
+def _is_open_today(restaurant: dict, current_day: str) -> bool:
+    if not current_day:
+        return True
+    
+    opening_hours = restaurant.get("opening_hours", [])
+    if not opening_hours:
+        return True
+        
+    for day_str in opening_hours:
+        if day_str.startswith(current_day):
+            if "Closed" in day_str:
+                return False
+            return True
+    return True
 
 @router.post("/generate_route", response_model=RouteResponse)
 def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
@@ -24,6 +37,7 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
         r for r in restaurants
         if any(t in r.get("theme", []) for t in tags)
         and haversine_m(req.user_lat, req.user_lng, r["lat"], r["lng"]) <= req.search_radius_meters
+        and _is_open_today(r, req.current_day)
     ]
 
     if len(filtered) < MIN_FILTERED:
@@ -38,6 +52,14 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
     lat_scale, lng_scale = lat_lng_scales(req.user_lat, req.search_radius_meters)
     tree, _ = build_kdtree(filtered)
 
+    departure_minutes: int | None = None
+    if req.current_time:
+        try:
+            h, m = req.current_time.split(":")
+            departure_minutes = int(h) * 60 + int(m)
+        except (ValueError, AttributeError):
+            departure_minutes = None
+
     best: TemplateResult | None = None
     best_name: str | None = None
 
@@ -51,6 +73,7 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
             req.user_lat, req.user_lng,
             lat_scale, lng_scale,
             req.total_budget,
+            departure_minutes,
         )
 
         if result.assignments is not None and (best is None or result.score > best.score):

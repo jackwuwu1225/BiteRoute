@@ -1,42 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Lavie陸米",
-    "lat": 22.9952598,
-    "lng": 120.2312827,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 247
-  },
-  {
-    "id": 2,
-    "name": "深夜",
-    "lat": 22.9893945,
-    "lng": 120.2272533,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 167
-  },
-  {
-    "id": 3,
-    "name": "小滿西點",
-    "lat": 22.9949296,
-    "lng": 120.2331912,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 284
-  },
-  {
-    "id": 4,
     "name": "KAKES Pâtisserie",
     "lat": 22.9744752,
     "lng": 120.2175674,
@@ -45,10 +9,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 200
+    "user_ratings_total": 200,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 5,
+    "id": 2,
     "name": "仁人",
     "lat": 22.9903676,
     "lng": 120.2301754,
@@ -57,10 +30,19 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 381
+    "user_ratings_total": 381,
+    "opening_hours": [
+      "Monday: 11:30",
+      "Tuesday: 11:30",
+      "Wednesday: 11:30",
+      "Thursday: 11:30",
+      "Friday: 11:30",
+      "Saturday: 11:30",
+      "Sunday: 11:30"
+    ]
   },
   {
-    "id": 6,
+    "id": 3,
     "name": "派星堂PALAXY台南旗艦店/十大伴手禮/甜點/下午茶/台南美食/杜拜巧克力",
     "lat": 22.990192,
     "lng": 120.2461905,
@@ -69,10 +51,40 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 1888
+    "user_ratings_total": 1888,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 7,
+    "id": 4,
+    "name": "Lavie陸米",
+    "lat": 22.9952598,
+    "lng": 120.2312827,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 247,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
+  },
+  {
+    "id": 5,
     "name": "ChuChu Pâtisserie 啾啾法式甜點｜派塔｜馬卡龍｜瑪德蓮｜費南雪｜4吋生日蛋糕",
     "lat": 22.9901008,
     "lng": 120.2174781,
@@ -81,10 +93,19 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 699
+    "user_ratings_total": 699,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 8,
+    "id": 6,
     "name": "c.t.dessert－台南甜點專賣 內用 外帶 手繪客製化蛋糕訂製 美食推薦 人氣咖啡廳首選 網紅伴手禮烘培坊 熱門必買甜品 下午茶",
     "lat": 22.9860204,
     "lng": 120.2170959,
@@ -93,10 +114,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 190
+    "user_ratings_total": 190,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: Closed",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 9,
+    "id": 7,
     "name": "O'Paris Patisserie",
     "lat": 22.9922482,
     "lng": 120.2211358,
@@ -105,34 +135,19 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 567
+    "user_ratings_total": 567,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 10,
-    "name": "賴床甜點(公休日請看IG)",
-    "lat": 22.9859777,
-    "lng": 120.2137773,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 86
-  },
-  {
-    "id": 11,
-    "name": "名坂奇洋菓子",
-    "lat": 22.9799743,
-    "lng": 120.2452684,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 5796
-  },
-  {
-    "id": 12,
+    "id": 8,
     "name": "艸礻手作千層(內用不接待四位以上同行無分桌併桌/不接待12歲以下孩童)",
     "lat": 22.9817705,
     "lng": 120.2321384,
@@ -141,70 +156,19 @@
     ],
     "price": 300,
     "rating": 4.2,
-    "user_ratings_total": 225
+    "user_ratings_total": 225,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 13:00"
+    ]
   },
   {
-    "id": 13,
-    "name": "說說甜點",
-    "lat": 22.9858718,
-    "lng": 120.2139925,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 371
-  },
-  {
-    "id": 14,
-    "name": "茶菓甜時",
-    "lat": 22.9902553,
-    "lng": 120.2184547,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 185
-  },
-  {
-    "id": 15,
-    "name": "貳林",
-    "lat": 22.9754333,
-    "lng": 120.2182129,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 3.9,
-    "user_ratings_total": 616
-  },
-  {
-    "id": 16,
-    "name": "想享甜點深夜客製化蛋糕店",
-    "lat": 22.9878267,
-    "lng": 120.2153986,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 5,
-    "user_ratings_total": 149
-  },
-  {
-    "id": 17,
-    "name": "治物所&湯米手做｜運動按摩｜筋膜放鬆｜骨架平衡｜痠痛舒緩｜甜點需要預定",
-    "lat": 22.998293,
-    "lng": 120.2340637,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 5,
-    "user_ratings_total": 59
-  },
-  {
-    "id": 18,
+    "id": 9,
     "name": "醉仙閣 pâtisserie",
     "lat": 22.9888961,
     "lng": 120.2276753,
@@ -213,22 +177,40 @@
     ],
     "price": 150,
     "rating": 4.8,
-    "user_ratings_total": 131
+    "user_ratings_total": 131,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: Closed",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 19,
-    "name": "魚妹的店 台南甜點工作室",
-    "lat": 22.9834974,
-    "lng": 120.2161786,
+    "id": 10,
+    "name": "說說甜點",
+    "lat": 22.9858718,
+    "lng": 120.2139925,
     "theme": [
       "dessert"
     ],
     "price": 300,
-    "rating": 5,
-    "user_ratings_total": 465
+    "rating": 4.7,
+    "user_ratings_total": 371,
+    "opening_hours": [
+      "Monday: 13:00",
+      "Tuesday: 13:00",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 13:00"
+    ]
   },
   {
-    "id": 20,
+    "id": 11,
     "name": "雄雄食社",
     "lat": 22.99827,
     "lng": 120.2318384,
@@ -237,7 +219,205 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 787
+    "user_ratings_total": 787,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 13:00"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "十月甜Oct.Sweet波士頓派 台南東寧門市",
+    "lat": 22.9899206,
+    "lng": 120.2288011,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 804,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Sisbro希絲柏甜食所 ｜早午餐｜舒芙蕾鬆餅｜千層蛋糕｜義大利麵｜",
+    "lat": 22.9846525,
+    "lng": 120.2165034,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 2622,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: Closed",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "深夜",
+    "lat": 22.9893945,
+    "lng": 120.2272533,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 167,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 00:00, 22:30",
+      "Thursday: 22:30",
+      "Friday: 22:30",
+      "Saturday: 22:30",
+      "Sunday: 22:30"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "卷卷烘焙 台南店 可愛甜點專賣店",
+    "lat": 22.9914696,
+    "lng": 120.2259573,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 587,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "小滿西點",
+    "lat": 22.9949296,
+    "lng": 120.2331912,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 284,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "名坂奇洋菓子",
+    "lat": 22.9799743,
+    "lng": 120.2452684,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 5796,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "賴床甜點(公休日請看IG)",
+    "lat": 22.9859777,
+    "lng": 120.2137773,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 86,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:30",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "KADOYA喫茶店",
+    "lat": 22.9858134,
+    "lng": 120.216032,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.3,
+    "user_ratings_total": 3305,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "想享甜點深夜客製化蛋糕店",
+    "lat": 22.9878267,
+    "lng": 120.2153986,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 5,
+    "user_ratings_total": 149,
+    "opening_hours": [
+      "Monday: 24 小時營業",
+      "Tuesday: 24 小時營業",
+      "Wednesday: 24 小時營業",
+      "Thursday: 24 小時營業",
+      "Friday: 24 小時營業",
+      "Saturday: 24 小時營業",
+      "Sunday: 24 小時營業"
+    ]
   },
   {
     "id": 21,
@@ -249,7 +429,16 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 2602
+    "user_ratings_total": 2602,
+    "opening_hours": [
+      "Monday: 13:00",
+      "Tuesday: 13:00",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 13:00"
+    ]
   },
   {
     "id": 22,
@@ -261,7 +450,16 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 809
+    "user_ratings_total": 809,
+    "opening_hours": [
+      "Monday: 13:00",
+      "Tuesday: Closed",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 13:00"
+    ]
   },
   {
     "id": 23,
@@ -273,7 +471,16 @@
     ],
     "price": 300,
     "rating": 4.6,
-    "user_ratings_total": 1224
+    "user_ratings_total": 1224,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
     "id": 24,
@@ -285,34 +492,19 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 825
+    "user_ratings_total": 825,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
     "id": 25,
-    "name": "元幸の手作冰 YXice—崇明總店（獨家手作冰品、冰棒、甜點）",
-    "lat": 22.9759879,
-    "lng": 120.2219007,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 506
-  },
-  {
-    "id": 26,
-    "name": "冰紛樂冰店",
-    "lat": 22.9971428,
-    "lng": 120.2274596,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 5,
-    "user_ratings_total": 253
-  },
-  {
-    "id": 27,
     "name": "榕樹下璞味綿綿冰",
     "lat": 22.9949632,
     "lng": 120.2270101,
@@ -321,10 +513,40 @@
     ],
     "price": 150,
     "rating": 4.7,
-    "user_ratings_total": 1682
+    "user_ratings_total": 1682,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 28,
+    "id": 26,
+    "name": "元幸の手作冰 YXice—崇明總店（獨家手作冰品、冰棒、甜點）",
+    "lat": 22.9759879,
+    "lng": 120.2219007,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 506,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 13:00",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 13:00"
+    ]
+  },
+  {
+    "id": 27,
     "name": "双利冰饌研習所 - 勝利總店",
     "lat": 22.9919195,
     "lng": 120.2176987,
@@ -333,10 +555,19 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 762
+    "user_ratings_total": 762,
+    "opening_hours": [
+      "Monday: 12:30",
+      "Tuesday: Closed",
+      "Wednesday: 12:30",
+      "Thursday: 12:30",
+      "Friday: 12:30",
+      "Saturday: 12:30",
+      "Sunday: 12:30"
+    ]
   },
   {
-    "id": 29,
+    "id": 28,
     "name": "豆腐洋行·特色冰品❘富農總店❘",
     "lat": 22.9871907,
     "lng": 120.2354481,
@@ -345,22 +576,19 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 1165
+    "user_ratings_total": 1165,
+    "opening_hours": [
+      "Monday: 13:00",
+      "Tuesday: 13:00",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 30,
-    "name": "慶華大碗公冰店",
-    "lat": 22.9826811,
-    "lng": 120.235007,
-    "theme": [
-      "dessert"
-    ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 197
-  },
-  {
-    "id": 31,
+    "id": 29,
     "name": "冰ㄉ• かき氷 二號",
     "lat": 22.9903399,
     "lng": 120.2101822,
@@ -369,22 +597,19 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 1498
+    "user_ratings_total": 1498,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 32,
-    "name": "黃火木舊台味冰店（崇德店）",
-    "lat": 22.9752041,
-    "lng": 120.2259026,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4,
-    "user_ratings_total": 539
-  },
-  {
-    "id": 33,
+    "id": 30,
     "name": "無名綿綿冰",
     "lat": 22.9942523,
     "lng": 120.2265028,
@@ -393,22 +618,40 @@
     ],
     "price": 150,
     "rating": 4.4,
-    "user_ratings_total": 280
+    "user_ratings_total": 280,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 34,
-    "name": "木子家八寶冰",
-    "lat": 22.9842912,
-    "lng": 120.2113072,
+    "id": 31,
+    "name": "黃火木舊台味冰店（崇德店）",
+    "lat": 22.9752041,
+    "lng": 120.2259026,
     "theme": [
       "dessert"
     ],
     "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 432
+    "rating": 4,
+    "user_ratings_total": 539,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 35,
+    "id": 32,
     "name": "良友 - 刀削蜜豆冰",
     "lat": 22.9963548,
     "lng": 120.2171431,
@@ -417,10 +660,40 @@
     ],
     "price": 150,
     "rating": 4.2,
-    "user_ratings_total": 702
+    "user_ratings_total": 702,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 36,
+    "id": 33,
+    "name": "冰紛樂冰店",
+    "lat": 22.9971428,
+    "lng": 120.2274596,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 5,
+    "user_ratings_total": 253,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:30",
+      "Wednesday: 11:30",
+      "Thursday: 11:30",
+      "Friday: 11:30",
+      "Saturday: 11:30",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 34,
     "name": "大碗公冰品台南-成大店",
     "lat": 22.9935262,
     "lng": 120.2218138,
@@ -429,7 +702,58 @@
     ],
     "price": 150,
     "rating": 4,
-    "user_ratings_total": 911
+    "user_ratings_total": 911,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "太陽牌冰品",
+    "lat": 22.9895458,
+    "lng": 120.2103119,
+    "theme": [
+      "dessert"
+    ],
+    "price": 150,
+    "rating": 4.5,
+    "user_ratings_total": 5795,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "大糖甜品 _ 一杓糖總店",
+    "lat": 22.9917501,
+    "lng": 120.2261198,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.5,
+    "user_ratings_total": 698,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
     "id": 37,
@@ -441,22 +765,82 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 291
+    "user_ratings_total": 291,
+    "opening_hours": [
+      "Monday: 09:30",
+      "Tuesday: 09:30",
+      "Wednesday: 09:30",
+      "Thursday: 09:30",
+      "Friday: 09:30",
+      "Saturday: 09:30",
+      "Sunday: 09:30"
+    ]
   },
   {
     "id": 38,
-    "name": "太陽牌冰品",
-    "lat": 22.9895458,
-    "lng": 120.2103119,
+    "name": "再睡5分鐘 - 台南南紡店",
+    "lat": 22.9901465,
+    "lng": 120.233213,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 3658,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 11:05",
+      "Wednesday: 11:05",
+      "Thursday: 11:05",
+      "Friday: 11:05",
+      "Saturday: 11:05",
+      "Sunday: 11:05"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "陳Q古早黑糖剉冰(東門店)",
+    "lat": 22.9865524,
+    "lng": 120.2195265,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.2,
+    "user_ratings_total": 218,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "慶華大碗公冰店",
+    "lat": 22.9826811,
+    "lng": 120.235007,
     "theme": [
       "dessert"
     ],
     "price": 150,
-    "rating": 4.5,
-    "user_ratings_total": 5794
+    "rating": 4.3,
+    "user_ratings_total": 197,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: Closed"
+    ]
   },
   {
-    "id": 39,
+    "id": 41,
     "name": "格那修手作蛋糕",
     "lat": 22.989399,
     "lng": 120.2194212,
@@ -465,10 +849,19 @@
     ],
     "price": 300,
     "rating": 4.2,
-    "user_ratings_total": 575
+    "user_ratings_total": 575,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 40,
+    "id": 42,
     "name": "歐貝拉洋菓子(崇信門市)",
     "lat": 22.9825597,
     "lng": 120.2263899,
@@ -477,10 +870,19 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 872
+    "user_ratings_total": 873,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 41,
+    "id": 43,
     "name": "安格高鈣乳酪 • 千層蛋糕",
     "lat": 22.972122,
     "lng": 120.2293079,
@@ -489,10 +891,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 1865
+    "user_ratings_total": 1865,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 42,
+    "id": 44,
     "name": "狸小路手作烘焙 裕學門市",
     "lat": 22.9852199,
     "lng": 120.2379784,
@@ -501,22 +912,19 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 1225
+    "user_ratings_total": 1225,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 43,
-    "name": "舒芙里法式烘焙坊",
-    "lat": 22.9935004,
-    "lng": 120.2263633,
-    "theme": [
-      "dessert"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 464
-  },
-  {
-    "id": 44,
+    "id": 45,
     "name": "柏林蛋糕(總店)-台南麵包",
     "lat": 22.9875838,
     "lng": 120.2336726,
@@ -525,34 +933,82 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 575
+    "user_ratings_total": 575,
+    "opening_hours": [
+      "Monday: 10:30",
+      "Tuesday: 10:30",
+      "Wednesday: 10:30",
+      "Thursday: 10:30",
+      "Friday: 10:30",
+      "Saturday: 10:30",
+      "Sunday: 10:30"
+    ]
   },
   {
-    "id": 45,
-    "name": "十月甜Oct.Sweet波士頓派 台南東寧門市",
-    "lat": 22.9899206,
-    "lng": 120.2288011,
+    "id": 46,
+    "name": "【烘焙DIY】甘單作-台南崇德店。",
+    "lat": 22.9756451,
+    "lng": 120.224964,
     "theme": [
       "dessert"
     ],
     "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 804
-  },
-  {
-    "id": 46,
-    "name": "多多巧思",
-    "lat": 22.9799112,
-    "lng": 120.2243097,
-    "theme": [
-      "dessert"
-    ],
-    "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 223
+    "rating": 4.9,
+    "user_ratings_total": 2382,
+    "opening_hours": [
+      "Monday: 13:00",
+      "Tuesday: Closed",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
     "id": 47,
+    "name": "貳林",
+    "lat": 22.9754333,
+    "lng": 120.2182129,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 3.9,
+    "user_ratings_total": 616,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 13:30",
+      "Thursday: 13:30",
+      "Friday: 13:30",
+      "Saturday: 13:30",
+      "Sunday: 13:30"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "聖保羅烘焙花園 崇明店",
+    "lat": 22.9738543,
+    "lng": 120.2238393,
+    "theme": [
+      "dessert"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 3118,
+    "opening_hours": [
+      "Monday: 09:30",
+      "Tuesday: 09:30",
+      "Wednesday: 09:30",
+      "Thursday: 09:30",
+      "Friday: 09:30",
+      "Saturday: 09:30",
+      "Sunday: 09:30"
+    ]
+  },
+  {
+    "id": 49,
     "name": "巷隅咖啡",
     "lat": 22.9731759,
     "lng": 120.2206536,
@@ -561,79 +1017,100 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 890
+    "user_ratings_total": 890,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
-    "id": 48,
-    "name": "二子（不定休、無訂位）",
-    "lat": 22.9666716,
-    "lng": 120.2365308,
-    "theme": [
-      "cafe"
-    ],
-    "price": 150,
-    "rating": 4.7,
-    "user_ratings_total": 466
-  },
-  {
-    "id": 49,
-    "name": "睦美咖啡Mu Mei Cafe",
-    "lat": 22.9989247,
-    "lng": 120.2272056,
+    "id": 50,
+    "name": "緩緩咖啡 Ease Coffee_極淺專門",
+    "lat": 22.997323,
+    "lng": 120.23176,
     "theme": [
       "cafe"
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 157
-  },
-  {
-    "id": 50,
-    "name": "THE YUAN 東興店（無訂位）",
-    "lat": 22.990451,
-    "lng": 120.2285478,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 166
+    "user_ratings_total": 340,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: Closed",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
     "id": 51,
-    "name": "MINI.D COFFEE 崇德館",
-    "lat": 22.9666318,
-    "lng": 120.2273808,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 1084
-  },
-  {
-    "id": 52,
-    "name": "Coffee x Conscience 咖啡良知",
-    "lat": 22.9669674,
-    "lng": 120.2317197,
+    "name": "NOTHING but coffee",
+    "lat": 22.9925433,
+    "lng": 120.2209058,
     "theme": [
       "cafe"
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 316
+    "user_ratings_total": 299,
+    "opening_hours": [
+      "Monday: 07:30",
+      "Tuesday: 07:30",
+      "Wednesday: Closed",
+      "Thursday: 07:30",
+      "Friday: 07:30",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 53,
-    "name": "T'WIN Coffee · 咖啡 / 云",
-    "lat": 22.9733037,
-    "lng": 120.224053,
+    "id": 52,
+    "name": "shēngshēng coffee - 台南東區咖啡店推薦 咖啡廳 雞蛋糕 手沖咖啡 在地美食 必吃 探店 人氣食記 網紅餐廳 打卡熱門景點 寵物友善 活動包場",
+    "lat": 22.9828513,
+    "lng": 120.2273942,
     "theme": [
       "cafe"
     ],
     "price": 300,
-    "rating": 4.4,
-    "user_ratings_total": 669
+    "rating": 4.8,
+    "user_ratings_total": 164,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "a Room房間咖啡",
+    "lat": 22.9849686,
+    "lng": 120.2190579,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 1587,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
     "id": 54,
@@ -645,34 +1122,82 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 194
+    "user_ratings_total": 194,
+    "opening_hours": [
+      "Monday: 07:00",
+      "Tuesday: 07:00",
+      "Wednesday: 07:00",
+      "Thursday: 07:00",
+      "Friday: 07:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
     "id": 55,
-    "name": "賦于咖啡",
-    "lat": 22.9939708,
-    "lng": 120.2218208,
+    "name": "July8th.cafe",
+    "lat": 22.9927325,
+    "lng": 120.2281842,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 272,
+    "opening_hours": [
+      "Monday: 13:00",
+      "Tuesday: 13:00",
+      "Wednesday: 13:00",
+      "Thursday: 13:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 13:00"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "睦美咖啡Mu Mei Cafe",
+    "lat": 22.9989247,
+    "lng": 120.2272056,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 157,
+    "opening_hours": [
+      "Monday: 08:00",
+      "Tuesday: 08:00",
+      "Wednesday: 08:00",
+      "Thursday: 08:00",
+      "Friday: 08:00",
+      "Saturday: 08:00",
+      "Sunday: 08:00"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "THE YUAN 東興店（無訂位）",
+    "lat": 22.990451,
+    "lng": 120.2285478,
     "theme": [
       "cafe"
     ],
     "price": 300,
     "rating": 4.6,
-    "user_ratings_total": 419
+    "user_ratings_total": 166,
+    "opening_hours": [
+      "Monday: 08:30",
+      "Tuesday: 08:30",
+      "Wednesday: 08:30",
+      "Thursday: 08:30",
+      "Friday: 08:30",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
-    "id": 56,
-    "name": "Pullovercoffee",
-    "lat": 22.9878657,
-    "lng": 120.2249841,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 124
-  },
-  {
-    "id": 57,
+    "id": 58,
     "name": "月波(店休看IG)",
     "lat": 22.9839586,
     "lng": 120.2168748,
@@ -681,31 +1206,29 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 650
-  },
-  {
-    "id": 58,
-    "name": "a Room房間咖啡",
-    "lat": 22.9849686,
-    "lng": 120.2190579,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 1587
+    "user_ratings_total": 650,
+    "opening_hours": []
   },
   {
     "id": 59,
-    "name": "探す Sagasu Coffee(內用不接含6位以上，汽車不能開進巷內)",
-    "lat": 22.9832659,
-    "lng": 120.2122067,
+    "name": "納咖啡（營業時間請看IG限動，無供應早午餐）",
+    "lat": 22.9844777,
+    "lng": 120.224668,
     "theme": [
       "cafe"
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 122
+    "user_ratings_total": 398,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: Closed",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
     "id": 60,
@@ -717,58 +1240,82 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 124
+    "user_ratings_total": 124,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
     "id": 61,
-    "name": "July8th.cafe",
-    "lat": 22.9927325,
-    "lng": 120.2281842,
+    "name": "被愛咖啡",
+    "lat": 22.9871807,
+    "lng": 120.2199626,
     "theme": [
       "cafe"
     ],
     "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 272
+    "rating": 4.5,
+    "user_ratings_total": 628,
+    "opening_hours": [
+      "Monday: 08:00",
+      "Tuesday: 08:00",
+      "Wednesday: 08:00",
+      "Thursday: 08:00",
+      "Friday: 08:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
     "id": 62,
-    "name": "NOTHING but coffee",
-    "lat": 22.9925433,
-    "lng": 120.2209058,
+    "name": "T'WIN Coffee · 咖啡 / 云",
+    "lat": 22.9733037,
+    "lng": 120.224053,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.4,
+    "user_ratings_total": 669,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 08:00",
+      "Sunday: 08:00"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Coffee x Conscience 咖啡良知",
+    "lat": 22.9669674,
+    "lng": 120.2317197,
     "theme": [
       "cafe"
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 299
-  },
-  {
-    "id": 63,
-    "name": "彼得好咖啡 台南崇德店",
-    "lat": 22.9705173,
-    "lng": 120.2274161,
-    "theme": [
-      "cafe"
-    ],
-    "price": 150,
-    "rating": 4.5,
-    "user_ratings_total": 221
+    "user_ratings_total": 316,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
     "id": 64,
-    "name": "城東合作咖啡",
-    "lat": 22.9880044,
-    "lng": 120.2164606,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 838
-  },
-  {
-    "id": 65,
     "name": "Layover coffee and chill（無固定店休— 每月店休請參考官方Instagram）",
     "lat": 22.9949737,
     "lng": 120.2144415,
@@ -777,22 +1324,124 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 97
+    "user_ratings_total": 97,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "城東合作咖啡",
+    "lat": 22.9880044,
+    "lng": 120.2164606,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 838,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00, 20:00",
+      "Saturday: 09:00, 20:00",
+      "Sunday: 09:00"
+    ]
   },
   {
     "id": 66,
-    "name": "納咖啡（營業時間請看IG限動，無供應早午餐）",
-    "lat": 22.9844777,
-    "lng": 120.224668,
+    "name": "賦于咖啡",
+    "lat": 22.9939708,
+    "lng": 120.2218208,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 419,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Pullovercoffee",
+    "lat": 22.9878657,
+    "lng": 120.2249841,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.5,
+    "user_ratings_total": 125,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: Closed",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: 09:00"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "二子（不定休、無訂位）",
+    "lat": 22.9666716,
+    "lng": 120.2365308,
+    "theme": [
+      "cafe"
+    ],
+    "price": 150,
+    "rating": 4.7,
+    "user_ratings_total": 466,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "探す Sagasu Coffee(內用不接含6位以上，汽車不能開進巷內)",
+    "lat": 22.9832659,
+    "lng": 120.2122067,
     "theme": [
       "cafe"
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 398
+    "user_ratings_total": 122,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 67,
+    "id": 70,
     "name": "Yum Yum Café",
     "lat": 22.9895037,
     "lng": 120.2245669,
@@ -801,10 +1450,61 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 173
+    "user_ratings_total": 173,
+    "opening_hours": [
+      "Monday: 08:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 08:00",
+      "Friday: 08:00",
+      "Saturday: 08:00",
+      "Sunday: 08:00"
+    ]
   },
   {
-    "id": 68,
+    "id": 71,
+    "name": "Dreamers Coffee Roasters 南紡店",
+    "lat": 22.9920623,
+    "lng": 120.2330322,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.4,
+    "user_ratings_total": 342,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "潺潺咖啡（公休日及營業時間皆以ig公布為主）",
+    "lat": 22.9808547,
+    "lng": 120.2266911,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 158,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
+  },
+  {
+    "id": 73,
     "name": "Bottoms Up喝起來(無訂位/不接待12歲以下孩童)",
     "lat": 22.9953965,
     "lng": 120.2217529,
@@ -813,94 +1513,19 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 491
-  },
-  {
-    "id": 69,
-    "name": "穿牆貓 Cat Traveller Caf'e",
-    "lat": 22.9869355,
-    "lng": 120.2283199,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 462
-  },
-  {
-    "id": 70,
-    "name": "why東西",
-    "lat": 22.9906881,
-    "lng": 120.229115,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 320
-  },
-  {
-    "id": 71,
-    "name": "HARUKO CAFE預約制閱讀咖啡館",
-    "lat": 22.9887615,
-    "lng": 120.2300442,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 5,
-    "user_ratings_total": 60
-  },
-  {
-    "id": 72,
-    "name": "KADOYA喫茶店",
-    "lat": 22.9858134,
-    "lng": 120.216032,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 3305
-  },
-  {
-    "id": 73,
-    "name": "狐獴先生早午餐【台南市東區狐獴餐廳】早午餐約會餐廳｜狐獴咖啡廳｜特色餐廳｜隱藏版早午餐",
-    "lat": 22.9915123,
-    "lng": 120.2219932,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 3545
+    "user_ratings_total": 491,
+    "opening_hours": [
+      "Monday: 09:30",
+      "Tuesday: 09:30",
+      "Wednesday: 09:30",
+      "Thursday: 09:30",
+      "Friday: 09:30",
+      "Saturday: 09:30",
+      "Sunday: 09:30"
+    ]
   },
   {
     "id": 74,
-    "name": "Oilily",
-    "lat": 22.9809335,
-    "lng": 120.2240417,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.4,
-    "user_ratings_total": 401
-  },
-  {
-    "id": 75,
-    "name": "緩緩咖啡 Ease Coffee_極淺專門",
-    "lat": 22.997323,
-    "lng": 120.23176,
-    "theme": [
-      "cafe"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 340
-  },
-  {
-    "id": 76,
     "name": "TUPA 客廳 coffee",
     "lat": 22.9827608,
     "lng": 120.2139355,
@@ -909,19 +1534,79 @@
     ],
     "price": 300,
     "rating": 4.6,
-    "user_ratings_total": 143
+    "user_ratings_total": 143,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: Closed",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 77,
-    "name": "密境咖啡 Mystery Coffee | 精品咖啡 | 咖啡豆批發 | 濾掛咖啡",
-    "lat": 22.9963671,
-    "lng": 120.2333729,
+    "id": 75,
+    "name": "日浮司康",
+    "lat": 22.9865509,
+    "lng": 120.2268541,
     "theme": [
       "cafe"
     ],
     "price": 300,
-    "rating": 5,
-    "user_ratings_total": 81
+    "rating": 4.8,
+    "user_ratings_total": 154,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: Closed",
+      "Saturday: 11:30",
+      "Sunday: 11:30"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "穿牆貓 Cat Traveller Caf'e",
+    "lat": 22.9869355,
+    "lng": 120.2283199,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 462,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 01:00",
+      "Thursday: 01:00",
+      "Friday: 13:00",
+      "Saturday: 13:00",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "MUC漫悠客咖啡B1+崇德店",
+    "lat": 22.962504,
+    "lng": 120.2274267,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 107,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 09:30",
+      "Wednesday: 09:30",
+      "Thursday: 09:30",
+      "Friday: 09:30",
+      "Saturday: 09:30",
+      "Sunday: 09:30"
+    ]
   },
   {
     "id": 78,
@@ -933,10 +1618,53 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 499
+    "user_ratings_total": 499,
+    "opening_hours": [
+      "Monday: 09:30",
+      "Tuesday: 09:30",
+      "Wednesday: 09:30",
+      "Thursday: 09:30",
+      "Friday: 09:30",
+      "Saturday: 09:30",
+      "Sunday: 09:30"
+    ]
   },
   {
     "id": 79,
+    "name": "HARUKO CAFE預約制閱讀咖啡館",
+    "lat": 22.9887615,
+    "lng": 120.2300442,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 5,
+    "user_ratings_total": 60,
+    "opening_hours": []
+  },
+  {
+    "id": 80,
+    "name": "MINI.D COFFEE 崇德館",
+    "lat": 22.9666318,
+    "lng": 120.2273808,
+    "theme": [
+      "cafe"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 1084,
+    "opening_hours": [
+      "Monday: 07:30",
+      "Tuesday: 07:30",
+      "Wednesday: 07:30",
+      "Thursday: 07:30",
+      "Friday: 07:30",
+      "Saturday: 07:30",
+      "Sunday: 07:30"
+    ]
+  },
+  {
+    "id": 81,
     "name": "愛人那裏there(大同市場內)",
     "lat": 22.9775408,
     "lng": 120.2144884,
@@ -945,118 +1673,19 @@
     ],
     "price": 300,
     "rating": 5,
-    "user_ratings_total": 62
-  },
-  {
-    "id": 80,
-    "name": "崇明新鮮牛肉湯",
-    "lat": 22.981143,
-    "lng": 120.2163915,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 806
-  },
-  {
-    "id": 81,
-    "name": "新鮮牛肉湯(東門店)",
-    "lat": 22.9860277,
-    "lng": 120.2213424,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.5,
-    "user_ratings_total": 1542
+    "user_ratings_total": 62,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
     "id": 82,
-    "name": "阿牛牛肉湯",
-    "lat": 22.9989516,
-    "lng": 120.2302176,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 3305
-  },
-  {
-    "id": 83,
-    "name": "長榮牛肉湯",
-    "lat": 22.9886528,
-    "lng": 120.2197521,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.2,
-    "user_ratings_total": 763
-  },
-  {
-    "id": 84,
-    "name": "台南牛肉湯-老田牛肉湯",
-    "lat": 22.9753825,
-    "lng": 120.2222606,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.1,
-    "user_ratings_total": 397
-  },
-  {
-    "id": 85,
-    "name": "億哥牛肉湯",
-    "lat": 22.9884516,
-    "lng": 120.2341891,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4,
-    "user_ratings_total": 11461
-  },
-  {
-    "id": 86,
-    "name": "清香牛肉湯",
-    "lat": 22.970151,
-    "lng": 120.2365968,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 258
-  },
-  {
-    "id": 87,
-    "name": "森山溫體牛肉湯（東安店）",
-    "lat": 22.9919618,
-    "lng": 120.2261458,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 361
-  },
-  {
-    "id": 88,
-    "name": "苏 - 牛肉湯—售完為止",
-    "lat": 22.9670218,
-    "lng": 120.2274171,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 898
-  },
-  {
-    "id": 89,
     "name": "鴻牛溫體牛肉湯-東寧店",
     "lat": 22.9895684,
     "lng": 120.2290757,
@@ -1065,22 +1694,61 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 1471
+    "user_ratings_total": 1471,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 90,
-    "name": "牛口水牛肉湯",
-    "lat": 22.9868734,
-    "lng": 120.2338355,
+    "id": 83,
+    "name": "苏 - 牛肉湯—售完為止",
+    "lat": 22.9670218,
+    "lng": 120.2274171,
     "theme": [
       "local"
     ],
     "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 218
+    "rating": 4.6,
+    "user_ratings_total": 898,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 91,
+    "id": 84,
+    "name": "森山溫體牛肉湯（東安店）",
+    "lat": 22.9919618,
+    "lng": 120.2261458,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.5,
+    "user_ratings_total": 361,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:30",
+      "Wednesday: 11:30",
+      "Thursday: 11:30",
+      "Friday: 11:30",
+      "Saturday: 11:30",
+      "Sunday: 11:30"
+    ]
+  },
+  {
+    "id": 85,
     "name": "文章牛肉湯 東寧旗艦店",
     "lat": 22.9894305,
     "lng": 120.2303307,
@@ -1089,10 +1757,166 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 3497
+    "user_ratings_total": 3497,
+    "opening_hours": [
+      "Monday: 11:30",
+      "Tuesday: 11:30",
+      "Wednesday: 11:30",
+      "Thursday: 11:30",
+      "Friday: 11:30",
+      "Saturday: 11:30",
+      "Sunday: 11:30"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "阿牛牛肉湯",
+    "lat": 22.9989516,
+    "lng": 120.2302176,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.3,
+    "user_ratings_total": 3305,
+    "opening_hours": [
+      "Monday: 06:30",
+      "Tuesday: 06:30",
+      "Wednesday: 06:30",
+      "Thursday: 06:30",
+      "Friday: 06:30",
+      "Saturday: 06:30",
+      "Sunday: 06:30"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "億哥牛肉湯",
+    "lat": 22.9884516,
+    "lng": 120.2341891,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4,
+    "user_ratings_total": 11461,
+    "opening_hours": [
+      "Monday: 24 小時營業",
+      "Tuesday: 24 小時營業",
+      "Wednesday: 24 小時營業",
+      "Thursday: 24 小時營業",
+      "Friday: 24 小時營業",
+      "Saturday: 24 小時營業",
+      "Sunday: 24 小時營業"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "崇明新鮮牛肉湯",
+    "lat": 22.981143,
+    "lng": 120.2163915,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.4,
+    "user_ratings_total": 806,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 05:30",
+      "Thursday: 05:30",
+      "Friday: 05:30",
+      "Saturday: 05:30",
+      "Sunday: 05:30"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "牛口水牛肉湯",
+    "lat": 22.9868734,
+    "lng": 120.2338355,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.2,
+    "user_ratings_total": 218,
+    "opening_hours": [
+      "Monday: 07:00",
+      "Tuesday: Closed",
+      "Wednesday: 07:00",
+      "Thursday: 07:00",
+      "Friday: 07:00",
+      "Saturday: 07:00",
+      "Sunday: 07:00"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "台南牛肉湯-老田牛肉湯",
+    "lat": 22.9753825,
+    "lng": 120.2222606,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.1,
+    "user_ratings_total": 397,
+    "opening_hours": [
+      "Monday: 07:00, 17:00",
+      "Tuesday: 07:00, 17:00",
+      "Wednesday: 07:00, 17:00",
+      "Thursday: 07:00, 17:00",
+      "Friday: 07:00, 17:00",
+      "Saturday: 07:00, 17:00",
+      "Sunday: 07:00, 17:00"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "哞麻溫體牛肉火鍋",
+    "lat": 22.9898421,
+    "lng": 120.2339754,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 1629,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
     "id": 92,
+    "name": "新鮮牛肉湯(東門店)",
+    "lat": 22.9860277,
+    "lng": 120.2213424,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.5,
+    "user_ratings_total": 1542,
+    "opening_hours": [
+      "Monday: 05:00",
+      "Tuesday: Closed",
+      "Wednesday: 05:00",
+      "Thursday: 05:00",
+      "Friday: 05:00",
+      "Saturday: 05:00",
+      "Sunday: 05:00"
+    ]
+  },
+  {
+    "id": 93,
     "name": "善化牛肉湯",
     "lat": 22.9669634,
     "lng": 120.2276297,
@@ -1101,58 +1925,40 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 345
-  },
-  {
-    "id": 93,
-    "name": "永福牛肉湯",
-    "lat": 22.9844461,
-    "lng": 120.2175657,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 464
+    "user_ratings_total": 345,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:30",
+      "Wednesday: 08:00",
+      "Thursday: 08:00",
+      "Friday: 08:00",
+      "Saturday: 08:00",
+      "Sunday: 08:00"
+    ]
   },
   {
     "id": 94,
-    "name": "大港牛肉湯(原和緯路)",
-    "lat": 22.969631,
-    "lng": 120.234065,
+    "name": "阿牛牛肉湯二館",
+    "lat": 22.9995702,
+    "lng": 120.2298281,
     "theme": [
       "local"
     ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 63
+    "price": 150,
+    "rating": 4.4,
+    "user_ratings_total": 307,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
     "id": 95,
-    "name": "林牛肉湯",
-    "lat": 22.9772078,
-    "lng": 120.2349225,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 125
-  },
-  {
-    "id": 96,
-    "name": "明智土產牛肉湯",
-    "lat": 22.9834297,
-    "lng": 120.2260573,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.1,
-    "user_ratings_total": 144
-  },
-  {
-    "id": 97,
     "name": "阿益牛肉湯",
     "lat": 22.9779444,
     "lng": 120.2448898,
@@ -1161,22 +1967,103 @@
     ],
     "price": 150,
     "rating": 4.4,
-    "user_ratings_total": 314
+    "user_ratings_total": 314,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: 11:00, 17:00"
+    ]
   },
   {
-    "id": 98,
-    "name": "精忠三村米糕",
-    "lat": 22.9906389,
-    "lng": 120.2361698,
+    "id": 96,
+    "name": "長榮牛肉湯",
+    "lat": 22.9886528,
+    "lng": 120.2197521,
     "theme": [
       "local"
     ],
     "price": 150,
-    "rating": 4.5,
-    "user_ratings_total": 653
+    "rating": 4.2,
+    "user_ratings_total": 763,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 05:30",
+      "Thursday: 05:30",
+      "Friday: 05:30",
+      "Saturday: 05:30",
+      "Sunday: 05:30"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "林牛肉湯",
+    "lat": 22.9772078,
+    "lng": 120.2349225,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.3,
+    "user_ratings_total": 125,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:00",
+      "Wednesday: 08:00",
+      "Thursday: 08:00",
+      "Friday: 08:00",
+      "Saturday: 08:00",
+      "Sunday: 08:00"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "老陳牛肉麵裕農店",
+    "lat": 22.9885178,
+    "lng": 120.2360869,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 237,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: 11:00, 17:00"
+    ]
   },
   {
     "id": 99,
+    "name": "阿梅牛肉湯",
+    "lat": 22.9719662,
+    "lng": 120.2282529,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 188,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 17:00"
+    ]
+  },
+  {
+    "id": 100,
     "name": "台南傳統米糕",
     "lat": 22.9702803,
     "lng": 120.2335727,
@@ -1185,94 +2072,19 @@
     ],
     "price": 150,
     "rating": 4.6,
-    "user_ratings_total": 330
-  },
-  {
-    "id": 100,
-    "name": "沛林小吃",
-    "lat": 22.9896149,
-    "lng": 120.2256519,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 261
+    "user_ratings_total": 330,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
     "id": 101,
-    "name": "邱家滷麵",
-    "lat": 22.9864677,
-    "lng": 120.2319241,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 94
-  },
-  {
-    "id": 102,
-    "name": "光明街無名肉燥飯（提早售完就提早收攤喔）",
-    "lat": 22.9941807,
-    "lng": 120.229316,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 622
-  },
-  {
-    "id": 103,
-    "name": "後甲圓環-無名虱目魚肉燥飯",
-    "lat": 22.9884946,
-    "lng": 120.2325451,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.2,
-    "user_ratings_total": 2251
-  },
-  {
-    "id": 104,
-    "name": "聚福香古早味",
-    "lat": 22.9946849,
-    "lng": 120.2312021,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 118
-  },
-  {
-    "id": 105,
-    "name": "穎記早點",
-    "lat": 22.9904556,
-    "lng": 120.2286872,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 305
-  },
-  {
-    "id": 106,
-    "name": "香香小吃",
-    "lat": 22.9907221,
-    "lng": 120.2227173,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 957
-  },
-  {
-    "id": 107,
     "name": "葉桑生炒鴨肉羹",
     "lat": 22.9902835,
     "lng": 120.2245482,
@@ -1281,34 +2093,19 @@
     ],
     "price": 150,
     "rating": 4.5,
-    "user_ratings_total": 603
+    "user_ratings_total": 603,
+    "opening_hours": [
+      "Monday: 10:30",
+      "Tuesday: 10:30",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: 10:30",
+      "Saturday: 10:30",
+      "Sunday: 10:30"
+    ]
   },
   {
-    "id": 108,
-    "name": "後甲榕樹下麵店",
-    "lat": 22.9905638,
-    "lng": 120.236885,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.1,
-    "user_ratings_total": 752
-  },
-  {
-    "id": 109,
-    "name": "詹記-家常飯桌鮮魚湯",
-    "lat": 22.992299,
-    "lng": 120.2262442,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 162
-  },
-  {
-    "id": 110,
+    "id": 102,
     "name": "滇緬小吃",
     "lat": 22.9801542,
     "lng": 120.2184772,
@@ -1317,7 +2114,184 @@
     ],
     "price": 150,
     "rating": 4.1,
-    "user_ratings_total": 334
+    "user_ratings_total": 334,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: Closed",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: 11:00, 17:00"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "沛林小吃",
+    "lat": 22.9896149,
+    "lng": 120.2256519,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.4,
+    "user_ratings_total": 262,
+    "opening_hours": [
+      "Monday: 06:00",
+      "Tuesday: 06:00",
+      "Wednesday: Closed",
+      "Thursday: 06:00",
+      "Friday: 06:00",
+      "Saturday: 06:00",
+      "Sunday: 06:00"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "香香小吃",
+    "lat": 22.9907221,
+    "lng": 120.2227173,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.4,
+    "user_ratings_total": 957,
+    "opening_hours": [
+      "Monday: 11:20, 16:30",
+      "Tuesday: 11:20, 16:30",
+      "Wednesday: 11:20, 16:30",
+      "Thursday: 11:20, 16:30",
+      "Friday: Closed",
+      "Saturday: 11:20, 16:30",
+      "Sunday: 11:20, 16:30"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "小南米糕 大同總店",
+    "lat": 22.9842304,
+    "lng": 120.2113051,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 3.9,
+    "user_ratings_total": 774,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "賣 • 土雞肉飯【台南市東區排隊小吃】網友激推美食｜平價小吃｜銅板美食｜傳統美食｜體育場附近美食｜排隊小吃",
+    "lat": 22.9793479,
+    "lng": 120.2130689,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.7,
+    "user_ratings_total": 805,
+    "opening_hours": [
+      "Monday: 11:00, 16:30",
+      "Tuesday: 11:00, 16:30",
+      "Wednesday: 11:00, 16:30",
+      "Thursday: 11:00, 16:30",
+      "Friday: 11:00, 16:30",
+      "Saturday: Closed",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "聚福香古早味",
+    "lat": 22.9946849,
+    "lng": 120.2312021,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.2,
+    "user_ratings_total": 118,
+    "opening_hours": [
+      "Monday: 14:00",
+      "Tuesday: 14:00",
+      "Wednesday: 14:00",
+      "Thursday: 14:00",
+      "Friday: 14:00",
+      "Saturday: 14:00",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "飽芝林關東煮",
+    "lat": 22.9936315,
+    "lng": 120.2267558,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.1,
+    "user_ratings_total": 2057,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "鑫鱻美食",
+    "lat": 22.988764,
+    "lng": 120.235709,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4,
+    "user_ratings_total": 136,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "後甲黃昏市場",
+    "lat": 22.994945,
+    "lng": 120.2311795,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.1,
+    "user_ratings_total": 1995,
+    "opening_hours": [
+      "Monday: 14:00",
+      "Tuesday: 14:00",
+      "Wednesday: 14:00",
+      "Thursday: 14:00",
+      "Friday: 14:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
     "id": 111,
@@ -1329,46 +2303,145 @@
     ],
     "price": 150,
     "rating": 4.4,
-    "user_ratings_total": 481
+    "user_ratings_total": 481,
+    "opening_hours": [
+      "Monday: 11:00, 16:30",
+      "Tuesday: 11:00, 16:30",
+      "Wednesday: 11:00, 16:30",
+      "Thursday: 11:00, 16:30",
+      "Friday: 11:00, 16:30",
+      "Saturday: 11:00, 16:30",
+      "Sunday: 11:00, 16:30"
+    ]
   },
   {
     "id": 112,
-    "name": "台北口味-米粉湯",
-    "lat": 22.9780593,
-    "lng": 120.2209587,
+    "name": "精忠三村米糕",
+    "lat": 22.9906389,
+    "lng": 120.2361698,
     "theme": [
       "local"
     ],
     "price": 150,
-    "rating": 4.2,
-    "user_ratings_total": 463
+    "rating": 4.5,
+    "user_ratings_total": 653,
+    "opening_hours": [
+      "Monday: 05:30",
+      "Tuesday: 05:30",
+      "Wednesday: 05:30",
+      "Thursday: 05:30",
+      "Friday: 05:30",
+      "Saturday: 05:30",
+      "Sunday: 05:30"
+    ]
   },
   {
     "id": 113,
-    "name": "阿娟小吃店",
-    "lat": 22.9708318,
-    "lng": 120.2334279,
+    "name": "紅樓小館",
+    "lat": 22.9958308,
+    "lng": 120.2171042,
     "theme": [
       "local"
     ],
     "price": 150,
-    "rating": 4,
-    "user_ratings_total": 1051
+    "rating": 4.1,
+    "user_ratings_total": 1495,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 10:30",
+      "Wednesday: 10:30",
+      "Thursday: 10:30",
+      "Friday: 10:30",
+      "Saturday: 10:30",
+      "Sunday: 10:30"
+    ]
   },
   {
     "id": 114,
-    "name": "福來鱔魚意麵(後甲店)",
-    "lat": 22.9883835,
-    "lng": 120.2347181,
+    "name": "光明街無名肉燥飯",
+    "lat": 22.9941807,
+    "lng": 120.229316,
     "theme": [
       "local"
     ],
     "price": 150,
     "rating": 4.3,
-    "user_ratings_total": 1251
+    "user_ratings_total": 622,
+    "opening_hours": [
+      "Monday: 05:30",
+      "Tuesday: 05:30",
+      "Wednesday: 05:30",
+      "Thursday: 05:30",
+      "Friday: 05:30",
+      "Saturday: 05:30",
+      "Sunday: 05:30"
+    ]
   },
   {
     "id": 115,
+    "name": "後甲圓環-無名虱目魚肉燥飯",
+    "lat": 22.9884946,
+    "lng": 120.2325451,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.2,
+    "user_ratings_total": 2251,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 00:00, 17:00",
+      "Wednesday: 00:00, 17:00",
+      "Thursday: 00:00, 17:00",
+      "Friday: 00:00, 17:00",
+      "Saturday: 00:00, 17:00",
+      "Sunday: 00:00"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "崇德（米糕四神湯）",
+    "lat": 22.9719312,
+    "lng": 120.2273734,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.2,
+    "user_ratings_total": 204,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "穎記早點",
+    "lat": 22.9904556,
+    "lng": 120.2286872,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 305,
+    "opening_hours": [
+      "Monday: 07:00",
+      "Tuesday: 07:00",
+      "Wednesday: 07:00",
+      "Thursday: 07:00",
+      "Friday: 07:00",
+      "Saturday: 08:00",
+      "Sunday: 08:00"
+    ]
+  },
+  {
+    "id": 118,
     "name": "美味汕頭意麵",
     "lat": 22.9990326,
     "lng": 120.2281789,
@@ -1377,58 +2450,19 @@
     ],
     "price": 150,
     "rating": 4.3,
-    "user_ratings_total": 166
-  },
-  {
-    "id": 116,
-    "name": "香圃麵店",
-    "lat": 22.9794991,
-    "lng": 120.2129379,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 3.5,
-    "user_ratings_total": 5283
-  },
-  {
-    "id": 117,
-    "name": "昌鱔魚意麵",
-    "lat": 22.9922028,
-    "lng": 120.2264706,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 348
-  },
-  {
-    "id": 118,
-    "name": "阿婆麵店",
-    "lat": 22.9596854,
-    "lng": 120.2276318,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 69
+    "user_ratings_total": 166,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
     "id": 119,
-    "name": "城邊真味鱔魚意麵",
-    "lat": 22.9874776,
-    "lng": 120.217157,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 2417
-  },
-  {
-    "id": 120,
     "name": "臺南汕頭意麵老店",
     "lat": 22.9943689,
     "lng": 120.2150275,
@@ -1437,70 +2471,19 @@
     ],
     "price": 150,
     "rating": 4.2,
-    "user_ratings_total": 107
+    "user_ratings_total": 107,
+    "opening_hours": [
+      "Monday: 11:30",
+      "Tuesday: 11:30",
+      "Wednesday: 11:30",
+      "Thursday: 11:30",
+      "Friday: 11:30",
+      "Saturday: 11:30",
+      "Sunday: 11:30"
+    ]
   },
   {
-    "id": 121,
-    "name": "丫頭麵店",
-    "lat": 22.9987942,
-    "lng": 120.2282378,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 264
-  },
-  {
-    "id": 122,
-    "name": "屋麵",
-    "lat": 22.9930141,
-    "lng": 120.228963,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 521
-  },
-  {
-    "id": 123,
-    "name": "東和鹽水意麵店",
-    "lat": 22.9819347,
-    "lng": 120.2174327,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 130
-  },
-  {
-    "id": 124,
-    "name": "早喵食肆(雞腿豬排餐盤/早餐/粉漿蛋餅/總匯吐司/漢堡/鍋燒意麵)",
-    "lat": 22.9858636,
-    "lng": 120.2227875,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 69
-  },
-  {
-    "id": 125,
-    "name": "小茂屋",
-    "lat": 22.9931234,
-    "lng": 120.2218306,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4,
-    "user_ratings_total": 3151
-  },
-  {
-    "id": 126,
+    "id": 120,
     "name": "台南陸橋沙茶意麵",
     "lat": 22.9879125,
     "lng": 120.2142863,
@@ -1509,22 +2492,103 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 403
+    "user_ratings_total": 403,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: Closed",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: Closed",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 127,
-    "name": "印尼口味",
-    "lat": 22.9895303,
-    "lng": 120.2256593,
+    "id": 121,
+    "name": "小茂屋",
+    "lat": 22.9931234,
+    "lng": 120.2218306,
     "theme": [
       "local"
     ],
     "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 206
+    "rating": 4,
+    "user_ratings_total": 3151,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 128,
+    "id": 122,
+    "name": "城邊真味鱔魚意麵",
+    "lat": 22.9874776,
+    "lng": 120.217157,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.3,
+    "user_ratings_total": 2417,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:30, 16:30",
+      "Wednesday: 11:30, 16:30",
+      "Thursday: 11:30, 16:30",
+      "Friday: 11:30, 16:30",
+      "Saturday: 11:30, 16:30",
+      "Sunday: 11:30, 16:30"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "福來鱔魚意麵(後甲店)",
+    "lat": 22.9883835,
+    "lng": 120.2347181,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.3,
+    "user_ratings_total": 1251,
+    "opening_hours": [
+      "Monday: 16:30",
+      "Tuesday: 16:30",
+      "Wednesday: 16:30",
+      "Thursday: 16:30",
+      "Friday: 16:30",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "香圃麵店",
+    "lat": 22.9794991,
+    "lng": 120.2129379,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 3.5,
+    "user_ratings_total": 5283,
+    "opening_hours": [
+      "Monday: 08:00",
+      "Tuesday: Closed",
+      "Wednesday: 00:00, 08:00",
+      "Thursday: 08:00",
+      "Friday: 08:00",
+      "Saturday: 08:00",
+      "Sunday: 08:00"
+    ]
+  },
+  {
+    "id": 125,
     "name": "百年老店鍋燒意麵東安店",
     "lat": 22.9910757,
     "lng": 120.2259444,
@@ -1533,22 +2597,187 @@
     ],
     "price": 150,
     "rating": 3.8,
-    "user_ratings_total": 320
+    "user_ratings_total": 320,
+    "opening_hours": [
+      "Monday: 10:30",
+      "Tuesday: 10:30",
+      "Wednesday: Closed",
+      "Thursday: 10:30",
+      "Friday: 10:30",
+      "Saturday: 10:30",
+      "Sunday: 10:30"
+    ]
   },
   {
-    "id": 129,
-    "name": "夜甡人進",
-    "lat": 22.9902243,
-    "lng": 120.2269979,
+    "id": 126,
+    "name": "陳媽麵攤",
+    "lat": 22.9903525,
+    "lng": 120.2286607,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.1,
+    "user_ratings_total": 164,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "劉妹鍋燒意麵-南紡店",
+    "lat": 22.9857353,
+    "lng": 120.2329831,
     "theme": [
       "local"
     ],
     "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 830
+    "rating": 4.2,
+    "user_ratings_total": 278,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: Closed",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "屋麵",
+    "lat": 22.9930141,
+    "lng": 120.228963,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.5,
+    "user_ratings_total": 521,
+    "opening_hours": [
+      "Monday: 11:30, 17:00",
+      "Tuesday: 11:30, 17:00",
+      "Wednesday: 11:30, 17:00",
+      "Thursday: 11:30, 17:00",
+      "Friday: 11:30, 17:00",
+      "Saturday: 11:30, 17:00",
+      "Sunday: 11:30, 17:00"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "昌鱔魚意麵",
+    "lat": 22.9922028,
+    "lng": 120.2264706,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.3,
+    "user_ratings_total": 348,
+    "opening_hours": [
+      "Monday: 11:30, 17:30",
+      "Tuesday: 11:30, 17:30",
+      "Wednesday: 11:30, 17:30",
+      "Thursday: 11:30, 17:30",
+      "Friday: 11:30, 17:30",
+      "Saturday: 11:30, 17:30",
+      "Sunday: Closed"
+    ]
   },
   {
     "id": 130,
+    "name": "鼎福廣東粥",
+    "lat": 22.9955786,
+    "lng": 120.2290625,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.7,
+    "user_ratings_total": 409,
+    "opening_hours": [
+      "Monday: 10:30",
+      "Tuesday: 10:30",
+      "Wednesday: 10:30",
+      "Thursday: 10:30",
+      "Friday: 10:30",
+      "Saturday: Closed",
+      "Sunday: 10:30"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "欽發麵店（原綠芝屋）",
+    "lat": 22.9943726,
+    "lng": 120.214994,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4,
+    "user_ratings_total": 277,
+    "opening_hours": [
+      "Monday: 10:31",
+      "Tuesday: 10:31",
+      "Wednesday: 10:31",
+      "Thursday: 10:31",
+      "Friday: 10:31",
+      "Saturday: 10:31",
+      "Sunday: 10:31"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "五加七鍋燒",
+    "lat": 22.9789579,
+    "lng": 120.2256188,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.6,
+    "user_ratings_total": 196,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: 11:00, 17:00"
+    ]
+  },
+  {
+    "id": 133,
+    "name": "吾燕煮鍋燒（可看臉書有無休息）",
+    "lat": 22.9935179,
+    "lng": 120.2144432,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.4,
+    "user_ratings_total": 248,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 134,
     "name": "李媜虱目魚、鍋燒（最後點餐時間13:30、19:30僅供外帶）",
     "lat": 22.9850281,
     "lng": 120.2166486,
@@ -1557,106 +2786,61 @@
     ],
     "price": 300,
     "rating": 4.1,
-    "user_ratings_total": 239
-  },
-  {
-    "id": 131,
-    "name": "林媽媽麵館",
-    "lat": 22.9763181,
-    "lng": 120.2204133,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 3.9,
-    "user_ratings_total": 742
-  },
-  {
-    "id": 132,
-    "name": "早安！活力美。",
-    "lat": 22.9885294,
-    "lng": 120.2361917,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.6,
-    "user_ratings_total": 52
-  },
-  {
-    "id": 133,
-    "name": "阿堂肉燥飯/鮮魚湯",
-    "lat": 22.9780094,
-    "lng": 120.2195427,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4,
-    "user_ratings_total": 145
-  },
-  {
-    "id": 134,
-    "name": "阿和肉燥飯",
-    "lat": 22.9890955,
-    "lng": 120.2105948,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.1,
-    "user_ratings_total": 2538
+    "user_ratings_total": 239,
+    "opening_hours": [
+      "Monday: 11:00, 16:30",
+      "Tuesday: 11:00, 16:30",
+      "Wednesday: Closed",
+      "Thursday: 11:00, 16:30",
+      "Friday: 11:00, 16:30",
+      "Saturday: 11:00, 16:30",
+      "Sunday: 11:00, 16:30"
+    ]
   },
   {
     "id": 135,
-    "name": "台南七海魚肚魚皮專賣店",
-    "lat": 22.9776192,
-    "lng": 120.2344436,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4,
-    "user_ratings_total": 2469
-  },
-  {
-    "id": 136,
-    "name": "國榮肉燥飯",
-    "lat": 22.9843342,
-    "lng": 120.2110633,
-    "theme": [
-      "local"
-    ],
-    "price": 150,
-    "rating": 4.2,
-    "user_ratings_total": 2571
-  },
-  {
-    "id": 137,
-    "name": "德東虱目魚",
-    "lat": 22.9617633,
-    "lng": 120.228475,
+    "name": "丫頭麵店",
+    "lat": 22.9987942,
+    "lng": 120.2282378,
     "theme": [
       "local"
     ],
     "price": 150,
     "rating": 4.3,
-    "user_ratings_total": 231
+    "user_ratings_total": 264,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ]
   },
   {
-    "id": 138,
-    "name": "誨碗粿魚焿滷肉飯",
-    "lat": 22.9885437,
-    "lng": 120.2255147,
+    "id": 136,
+    "name": "志明炒鱔魚",
+    "lat": 22.9833202,
+    "lng": 120.2268772,
     "theme": [
       "local"
     ],
-    "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 115
+    "price": 150,
+    "rating": 4.1,
+    "user_ratings_total": 324,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: Closed",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: 11:00, 17:00"
+    ]
   },
   {
-    "id": 139,
+    "id": 137,
     "name": "魯肉昌",
     "lat": 22.9752382,
     "lng": 120.2259936,
@@ -1665,43 +2849,121 @@
     ],
     "price": 150,
     "rating": 4.3,
-    "user_ratings_total": 209
+    "user_ratings_total": 209,
+    "opening_hours": [
+      "Monday: 12:00",
+      "Tuesday: 12:00",
+      "Wednesday: 12:00",
+      "Thursday: 12:00",
+      "Friday: 12:00",
+      "Saturday: 12:00",
+      "Sunday: 12:00"
+    ]
   },
   {
-    "id": 140,
-    "name": "開元路無名虱目魚·肉燥飯（5/13-19休息）",
-    "lat": 23.0082347,
-    "lng": 120.2215718,
+    "id": 138,
+    "name": "阿堂肉燥飯/鮮魚湯",
+    "lat": 22.9780094,
+    "lng": 120.2195427,
     "theme": [
       "local"
     ],
     "price": 150,
-    "rating": 4.4,
-    "user_ratings_total": 3663
+    "rating": 4,
+    "user_ratings_total": 145,
+    "opening_hours": [
+      "Monday: 09:00",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
-    "id": 141,
-    "name": "肉燥飯達人",
-    "lat": 22.9955657,
-    "lng": 120.2161782,
-    "theme": [
-      "local"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 158
-  },
-  {
-    "id": 142,
-    "name": "葉家魚皮",
-    "lat": 22.965349,
-    "lng": 120.227547,
+    "id": 139,
+    "name": "阿和肉燥飯",
+    "lat": 22.9890955,
+    "lng": 120.2105948,
     "theme": [
       "local"
     ],
     "price": 150,
     "rating": 4.1,
-    "user_ratings_total": 1019
+    "user_ratings_total": 2538,
+    "opening_hours": [
+      "Monday: 06:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 06:00",
+      "Friday: 06:00",
+      "Saturday: 06:00",
+      "Sunday: 06:00"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "國榮肉燥飯",
+    "lat": 22.9843342,
+    "lng": 120.2110633,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.2,
+    "user_ratings_total": 2571,
+    "opening_hours": [
+      "Monday: 06:00",
+      "Tuesday: 06:00",
+      "Wednesday: 06:00",
+      "Thursday: 06:00",
+      "Friday: 06:00",
+      "Saturday: 06:00",
+      "Sunday: 06:00"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "台南七海魚肚魚皮專賣店",
+    "lat": 22.9776192,
+    "lng": 120.2344436,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4,
+    "user_ratings_total": 2469,
+    "opening_hours": [
+      "Monday: 06:00",
+      "Tuesday: Closed",
+      "Wednesday: 06:00",
+      "Thursday: 06:00",
+      "Friday: 06:00",
+      "Saturday: 06:00",
+      "Sunday: 06:00"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "後甲嘉義雞肉飯",
+    "lat": 22.9884535,
+    "lng": 120.2356502,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.2,
+    "user_ratings_total": 1041,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 10:30",
+      "Thursday: 10:30",
+      "Friday: 10:30",
+      "Saturday: 10:30",
+      "Sunday: 10:30"
+    ]
   },
   {
     "id": 143,
@@ -1713,10 +2975,40 @@
     ],
     "price": 300,
     "rating": 4,
-    "user_ratings_total": 482
+    "user_ratings_total": 482,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 09:00",
+      "Wednesday: 09:00",
+      "Thursday: 09:00",
+      "Friday: 09:00",
+      "Saturday: 09:00",
+      "Sunday: 09:00"
+    ]
   },
   {
     "id": 144,
+    "name": "葉家魚皮",
+    "lat": 22.965349,
+    "lng": 120.227547,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.1,
+    "user_ratings_total": 1019,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 06:30",
+      "Wednesday: 06:30",
+      "Thursday: 06:30",
+      "Friday: 06:30",
+      "Saturday: 06:30",
+      "Sunday: 06:30"
+    ]
+  },
+  {
+    "id": 145,
     "name": "江川肉燥飯",
     "lat": 22.9976246,
     "lng": 120.1991883,
@@ -1725,10 +3017,61 @@
     ],
     "price": 150,
     "rating": 4.2,
-    "user_ratings_total": 637
+    "user_ratings_total": 637,
+    "opening_hours": [
+      "Monday: 07:30",
+      "Tuesday: 07:30",
+      "Wednesday: 07:30",
+      "Thursday: Closed",
+      "Friday: Closed",
+      "Saturday: 07:30",
+      "Sunday: 07:30"
+    ]
   },
   {
-    "id": 145,
+    "id": 146,
+    "name": "李桑香菇肉燥飯（台南保安店）",
+    "lat": 22.9903924,
+    "lng": 120.1965631,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 1106,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: Closed",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 147,
+    "name": "賀呷肉燥飯虱目魚",
+    "lat": 23.0075445,
+    "lng": 120.2203432,
+    "theme": [
+      "local"
+    ],
+    "price": 150,
+    "rating": 4.6,
+    "user_ratings_total": 249,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:30",
+      "Thursday: 11:30",
+      "Friday: 11:30",
+      "Saturday: 11:30",
+      "Sunday: 11:30"
+    ]
+  },
+  {
+    "id": 148,
     "name": "台南順天肉燥飯",
     "lat": 22.9899928,
     "lng": 120.1950724,
@@ -1737,22 +3080,103 @@
     ],
     "price": 150,
     "rating": 4,
-    "user_ratings_total": 605
+    "user_ratings_total": 605,
+    "opening_hours": [
+      "Monday: 07:50",
+      "Tuesday: 07:50",
+      "Wednesday: 07:50",
+      "Thursday: 07:50",
+      "Friday: 07:50",
+      "Saturday: 07:50",
+      "Sunday: 07:50"
+    ]
   },
   {
-    "id": 146,
-    "name": "台灣鮮魚湯 肉燥飯(府前 創始店)",
-    "lat": 22.9909322,
-    "lng": 120.1950538,
+    "id": 149,
+    "name": "詹記-家常飯桌鮮魚湯",
+    "lat": 22.992299,
+    "lng": 120.2262442,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.5,
+    "user_ratings_total": 162,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 150,
+    "name": "誨碗粿魚焿滷肉飯",
+    "lat": 22.9885437,
+    "lng": 120.2255147,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.2,
+    "user_ratings_total": 115,
+    "opening_hours": [
+      "Monday: 06:30",
+      "Tuesday: Closed",
+      "Wednesday: 06:30",
+      "Thursday: 06:30",
+      "Friday: 06:30",
+      "Saturday: 06:30",
+      "Sunday: 06:30"
+    ]
+  },
+  {
+    "id": 151,
+    "name": "肉燥飯達人",
+    "lat": 22.9955657,
+    "lng": 120.2161782,
+    "theme": [
+      "local"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 159,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: Closed",
+      "Friday: Closed",
+      "Saturday: Closed",
+      "Sunday: 11:00, 17:00"
+    ]
+  },
+  {
+    "id": 152,
+    "name": "黑記鮮魚湯",
+    "lat": 22.98388,
+    "lng": 120.226146,
     "theme": [
       "local"
     ],
     "price": 150,
     "rating": 4.3,
-    "user_ratings_total": 1145
+    "user_ratings_total": 605,
+    "opening_hours": [
+      "Monday: 10:30",
+      "Tuesday: 10:30",
+      "Wednesday: 10:30",
+      "Thursday: 10:30",
+      "Friday: 10:30",
+      "Saturday: 10:30",
+      "Sunday: 10:30"
+    ]
   },
   {
-    "id": 147,
+    "id": 153,
     "name": "孔雀Le Paon（店休看IG）",
     "lat": 22.9838579,
     "lng": 120.2169112,
@@ -1761,10 +3185,11 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 161
+    "user_ratings_total": 161,
+    "opening_hours": []
   },
   {
-    "id": 148,
+    "id": 154,
     "name": "南嶼拾光(餐酒館)",
     "lat": 22.9927413,
     "lng": 120.2223853,
@@ -1773,70 +3198,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 203
+    "user_ratings_total": 203,
+    "opening_hours": [
+      "Monday: 17:30",
+      "Tuesday: 17:30",
+      "Wednesday: 17:30",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
   },
   {
-    "id": 149,
-    "name": "貳侶-星空酒吧 &早午餐",
-    "lat": 22.9770339,
-    "lng": 120.2443835,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 5,
-    "user_ratings_total": 725
-  },
-  {
-    "id": 150,
-    "name": "Midnight Tainan | 午夜勒戒所",
-    "lat": 22.998498,
-    "lng": 120.2315588,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 2426
-  },
-  {
-    "id": 151,
-    "name": "在島之後After Island. 餐酒館",
-    "lat": 22.99356,
-    "lng": 120.2259653,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 732
-  },
-  {
-    "id": 152,
-    "name": "溜酒溜酒餐酒館（崇仁店）",
-    "lat": 22.9840404,
-    "lng": 120.2231637,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 411
-  },
-  {
-    "id": 153,
-    "name": "奏匯 ToGather Bar",
-    "lat": 22.9863789,
-    "lng": 120.2276614,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 217
-  },
-  {
-    "id": 154,
+    "id": 155,
     "name": "Fashions微醺南紡旗艦店-台南美食 台南餐廳 台南餐酒館 台南居酒屋 東區餐酒館",
     "lat": 22.9923209,
     "lng": 120.2334389,
@@ -1845,46 +3219,103 @@
     ],
     "price": 300,
     "rating": 4.6,
-    "user_ratings_total": 3197
-  },
-  {
-    "id": 155,
-    "name": "澪三酒食",
-    "lat": 22.9797272,
-    "lng": 120.2177479,
-    "theme": [
-      "bistro"
-    ],
-    "price": 450,
-    "rating": 5,
-    "user_ratings_total": 14137
+    "user_ratings_total": 3197,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
     "id": 156,
-    "name": "初生食造",
+    "name": "在島之後After Island. 餐酒館",
     "lat": 22.99356,
     "lng": 120.2259653,
     "theme": [
       "bistro"
     ],
     "price": 300,
-    "rating": 4.4,
-    "user_ratings_total": 177
+    "rating": 4.6,
+    "user_ratings_total": 732,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
   },
   {
     "id": 157,
-    "name": "家根創意酒肴- 大同店",
-    "lat": 22.9750433,
-    "lng": 120.2143281,
+    "name": "貳侶-星空酒吧 &早午餐",
+    "lat": 22.9770339,
+    "lng": 120.2443835,
+    "theme": [
+      "bistro"
+    ],
+    "price": 300,
+    "rating": 5,
+    "user_ratings_total": 725,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 07:00, 19:30",
+      "Wednesday: 07:00, 19:30",
+      "Thursday: 07:00, 19:30",
+      "Friday: 07:00, 19:30",
+      "Saturday: 07:00, 19:30",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Midnight Tainan | 午夜勒戒所",
+    "lat": 22.998498,
+    "lng": 120.2315588,
+    "theme": [
+      "bistro"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 2426,
+    "opening_hours": [
+      "Monday: 21:00",
+      "Tuesday: 21:00",
+      "Wednesday: 21:00",
+      "Thursday: 21:00",
+      "Friday: 21:00",
+      "Saturday: 21:00",
+      "Sunday: 21:00"
+    ]
+  },
+  {
+    "id": 159,
+    "name": "溜酒溜酒餐酒館（崇仁店）",
+    "lat": 22.9840404,
+    "lng": 120.2231637,
     "theme": [
       "bistro"
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 3403
+    "user_ratings_total": 411,
+    "opening_hours": [
+      "Monday: 19:00",
+      "Tuesday: 19:00",
+      "Wednesday: Closed",
+      "Thursday: 19:00",
+      "Friday: 19:00",
+      "Saturday: 19:00",
+      "Sunday: 19:00"
+    ]
   },
   {
-    "id": 158,
+    "id": 160,
     "name": "Dotch Bistro 兜齊私廚餐酒館",
     "lat": 22.9861608,
     "lng": 120.2113944,
@@ -1893,22 +3324,103 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 894
+    "user_ratings_total": 894,
+    "opening_hours": [
+      "Monday: 11:00, 17:00",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: 11:00, 17:00"
+    ]
   },
   {
-    "id": 159,
-    "name": "Twilight 暮光餐酒館",
-    "lat": 23.0002509,
-    "lng": 120.2081097,
+    "id": 161,
+    "name": "奏匯 ToGather Bar",
+    "lat": 22.9863789,
+    "lng": 120.2276614,
     "theme": [
       "bistro"
     ],
     "price": 300,
-    "rating": 5,
-    "user_ratings_total": 300
+    "rating": 4.9,
+    "user_ratings_total": 217,
+    "opening_hours": [
+      "Monday: 20:00",
+      "Tuesday: 20:00",
+      "Wednesday: 20:00",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: 20:00"
+    ]
   },
   {
-    "id": 160,
+    "id": 162,
+    "name": "澪三酒食",
+    "lat": 22.9797272,
+    "lng": 120.2177479,
+    "theme": [
+      "bistro"
+    ],
+    "price": 450,
+    "rating": 5,
+    "user_ratings_total": 14136,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
+  },
+  {
+    "id": 163,
+    "name": "初生食造",
+    "lat": 22.99356,
+    "lng": 120.2259653,
+    "theme": [
+      "bistro"
+    ],
+    "price": 300,
+    "rating": 4.4,
+    "user_ratings_total": 177,
+    "opening_hours": [
+      "Monday: 00:30, 17:30",
+      "Tuesday: 00:30, 17:30",
+      "Wednesday: 00:30, 17:30",
+      "Thursday: 00:30, 17:30",
+      "Friday: 00:30, 17:30",
+      "Saturday: 00:30, 17:30",
+      "Sunday: 00:30, 17:30"
+    ]
+  },
+  {
+    "id": 164,
+    "name": "家根創意酒肴- 大同店",
+    "lat": 22.9750433,
+    "lng": 120.2143281,
+    "theme": [
+      "bistro"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 3403,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: 18:00",
+      "Wednesday: Closed",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
+  },
+  {
+    "id": 165,
     "name": "南方酒館",
     "lat": 22.9883863,
     "lng": 120.2236836,
@@ -1917,10 +3429,61 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 347
+    "user_ratings_total": 347,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
   },
   {
-    "id": 161,
+    "id": 166,
+    "name": "銀涓茶閣 In.J Bar",
+    "lat": 22.9723992,
+    "lng": 120.2295199,
+    "theme": [
+      "bistro"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 1207,
+    "opening_hours": [
+      "Monday: 11:00, 22:00",
+      "Tuesday: 11:00, 22:00",
+      "Wednesday: 11:00, 22:00",
+      "Thursday: 22:00",
+      "Friday: 11:00, 22:00",
+      "Saturday: 11:00, 22:00",
+      "Sunday: 11:00, 22:00"
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Twilight 暮光餐酒館",
+    "lat": 23.0002509,
+    "lng": 120.2081097,
+    "theme": [
+      "bistro"
+    ],
+    "price": 300,
+    "rating": 5,
+    "user_ratings_total": 300,
+    "opening_hours": [
+      "Monday: 21:00",
+      "Tuesday: 21:00",
+      "Wednesday: 21:00",
+      "Thursday: 21:00",
+      "Friday: 21:00",
+      "Saturday: 21:00",
+      "Sunday: 21:00"
+    ]
+  },
+  {
+    "id": 168,
     "name": "Bar Alter",
     "lat": 22.9884151,
     "lng": 120.2122339,
@@ -1929,22 +3492,19 @@
     ],
     "price": 300,
     "rating": 4.6,
-    "user_ratings_total": 214
+    "user_ratings_total": 214,
+    "opening_hours": [
+      "Monday: 19:00",
+      "Tuesday: 19:00",
+      "Wednesday: 19:00",
+      "Thursday: 19:00",
+      "Friday: 19:00",
+      "Saturday: 19:00",
+      "Sunday: 19:00"
+    ]
   },
   {
-    "id": 162,
-    "name": "OH ROOM Listening Lounge 聆聽酒吧空間所",
-    "lat": 22.9902446,
-    "lng": 120.226805,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 56
-  },
-  {
-    "id": 163,
+    "id": 169,
     "name": "The Render.fusion 福醺湯包 X 餐酒館（小籠包需至少2天前預訂，營業日期時間請依IG公告）",
     "lat": 22.9713533,
     "lng": 120.2548407,
@@ -1953,79 +3513,16 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 93
-  },
-  {
-    "id": 164,
-    "name": "Bar Whisper",
-    "lat": 22.9911659,
-    "lng": 120.2234073,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 82
-  },
-  {
-    "id": 165,
-    "name": "茉里more",
-    "lat": 22.9902776,
-    "lng": 120.236926,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 1079
-  },
-  {
-    "id": 166,
-    "name": "Ciao Bella",
-    "lat": 22.9872876,
-    "lng": 120.2419125,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 572
-  },
-  {
-    "id": 167,
-    "name": "is義式餐廳",
-    "lat": 22.9957929,
-    "lng": 120.2210064,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 1070
-  },
-  {
-    "id": 168,
-    "name": "呷義義大利麵館(JIAPASTA)",
-    "lat": 22.9991535,
-    "lng": 120.2280637,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 740
-  },
-  {
-    "id": 169,
-    "name": "GoodDay Kitchen｜台南義大利麵｜私房料理｜小酌聚餐",
-    "lat": 22.9827018,
-    "lng": 120.2261706,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 338
+    "user_ratings_total": 93,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: 18:30",
+      "Saturday: 18:30",
+      "Sunday: 18:30"
+    ]
   },
   {
     "id": 170,
@@ -2037,394 +3534,187 @@
     ],
     "price": 450,
     "rating": 4.3,
-    "user_ratings_total": 637
+    "user_ratings_total": 637,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 11:00, 18:00",
+      "Sunday: 11:00, 18:00"
+    ]
   },
   {
     "id": 171,
-    "name": "BELLINI Pasta Pasta 台南南紡店",
-    "lat": 22.991474,
-    "lng": 120.232895,
+    "name": "OH ROOM Listening Lounge 聆聽酒吧空間所",
+    "lat": 22.9902446,
+    "lng": 120.226805,
     "theme": [
       "bistro"
     ],
     "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 2366
+    "rating": 4.9,
+    "user_ratings_total": 56,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 20:00",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: Closed"
+    ]
   },
   {
     "id": 172,
-    "name": "哈燒小食堂義式料理餐廳",
-    "lat": 22.9919165,
-    "lng": 120.2144133,
+    "name": "Perfect Darts 飛鏢旗艦店",
+    "lat": 22.9850857,
+    "lng": 120.2230298,
     "theme": [
       "bistro"
     ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 312
+    "price": 150,
+    "rating": 4.6,
+    "user_ratings_total": 148,
+    "opening_hours": [
+      "Monday: 15:00",
+      "Tuesday: 15:00",
+      "Wednesday: 15:00",
+      "Thursday: 15:00",
+      "Friday: 15:00",
+      "Saturday: 15:00",
+      "Sunday: 15:00"
+    ]
   },
   {
     "id": 173,
-    "name": "薄多義 Bite2Eat 台南崇學店",
-    "lat": 22.9803159,
-    "lng": 120.2234596,
+    "name": "純粹飛鏢本舖Pure Darts Shop",
+    "lat": 22.9995523,
+    "lng": 120.2354795,
     "theme": [
       "bistro"
     ],
     "price": 300,
-    "rating": 4.1,
-    "user_ratings_total": 3229
+    "rating": 4.8,
+    "user_ratings_total": 84,
+    "opening_hours": [
+      "Monday: 24 小時營業",
+      "Tuesday: 24 小時營業",
+      "Wednesday: 24 小時營業",
+      "Thursday: 24 小時營業",
+      "Friday: 24 小時營業",
+      "Saturday: 24 小時營業",
+      "Sunday: 24 小時營業"
+    ]
   },
   {
     "id": 174,
-    "name": "秘密(搜尋Double.Mi)",
-    "lat": 22.9848911,
-    "lng": 120.2374046,
+    "name": "Bar Whisper",
+    "lat": 22.9911659,
+    "lng": 120.2234073,
     "theme": [
       "bistro"
     ],
     "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 1265
+    "rating": 4.5,
+    "user_ratings_total": 82,
+    "opening_hours": [
+      "Monday: 20:00",
+      "Tuesday: 20:00",
+      "Wednesday: Closed",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: 20:00"
+    ]
   },
   {
     "id": 175,
-    "name": "Order義式料理",
-    "lat": 22.9969312,
-    "lng": 120.2044407,
+    "name": "尬吧__Bar Mcgodd | 每日限接待12人次 | 建議先預約",
+    "lat": 23.0072339,
+    "lng": 120.2068534,
     "theme": [
       "bistro"
     ],
     "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 581
+    "rating": 5,
+    "user_ratings_total": 163,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 20:30",
+      "Wednesday: 20:30",
+      "Thursday: 20:30",
+      "Friday: 20:30",
+      "Saturday: 20:30",
+      "Sunday: 20:30"
+    ]
   },
   {
     "id": 176,
-    "name": "數到3義式餐廳義大利麵｜外帶｜餐盒外送",
-    "lat": 22.9846025,
-    "lng": 120.216701,
+    "name": "Trio Darts",
+    "lat": 22.9958711,
+    "lng": 120.1965526,
     "theme": [
       "bistro"
     ],
     "price": 300,
-    "rating": 4.4,
-    "user_ratings_total": 422
+    "rating": 4.5,
+    "user_ratings_total": 188,
+    "opening_hours": [
+      "Monday: 19:00",
+      "Tuesday: 19:00",
+      "Wednesday: 19:00",
+      "Thursday: 19:00",
+      "Friday: 19:00",
+      "Saturday: 19:00",
+      "Sunday: 19:00"
+    ]
   },
   {
     "id": 177,
-    "name": "雛菊見 台南國賓店",
-    "lat": 22.9954681,
-    "lng": 120.234089,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 4309
-  },
-  {
-    "id": 178,
-    "name": "庫肯花園餐廳",
-    "lat": 22.9956696,
-    "lng": 120.2212249,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 1800
-  },
-  {
-    "id": 179,
-    "name": "輕鬆點全日餐館",
-    "lat": 22.9867702,
-    "lng": 120.2298024,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 2931
-  },
-  {
-    "id": 180,
-    "name": "皮耶諾 異國料理廚房（府連店）",
-    "lat": 22.9860863,
-    "lng": 120.2170934,
+    "name": "THE SHOTTING FUN",
+    "lat": 22.9946617,
+    "lng": 120.1966808,
     "theme": [
       "bistro"
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 1078
+    "user_ratings_total": 449,
+    "opening_hours": [
+      "Monday: 20:30",
+      "Tuesday: 20:30",
+      "Wednesday: 20:30",
+      "Thursday: 20:30",
+      "Friday: 20:30",
+      "Saturday: 20:30",
+      "Sunday: 20:30"
+    ]
   },
   {
-    "id": 181,
-    "name": "27 Pizza Italy 義大利窯烤披薩",
-    "lat": 22.9935068,
-    "lng": 120.2234274,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 583
-  },
-  {
-    "id": 182,
-    "name": "菓爾義大利麵",
-    "lat": 22.987791,
-    "lng": 120.233305,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 214
-  },
-  {
-    "id": 183,
-    "name": "鬧義麵 勝利店",
-    "lat": 22.9919582,
-    "lng": 120.2176506,
+    "id": 178,
+    "name": "M/F(Mezzanine Floor)",
+    "lat": 22.987587,
+    "lng": 120.196235,
     "theme": [
       "bistro"
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 1215
+    "user_ratings_total": 102,
+    "opening_hours": [
+      "Monday: 20:00",
+      "Tuesday: Closed",
+      "Wednesday: 20:00",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: 20:00"
+    ]
   },
   {
-    "id": 184,
-    "name": "斑迪先生美式餐廳",
-    "lat": 22.971718,
-    "lng": 120.225497,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 631
-  },
-  {
-    "id": 185,
-    "name": "庫克漢堡［一人作業餐點要等、國小生的兒童才能入內］",
-    "lat": 22.9747711,
-    "lng": 120.2201579,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 549
-  },
-  {
-    "id": 186,
-    "name": "KOKOMO 漢堡 (5/1店休一日",
-    "lat": 22.9852192,
-    "lng": 120.2153099,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 235
-  },
-  {
-    "id": 187,
-    "name": "ALMONd.我的漢飽超好吃（菜單在臉書或IG最新一篇文章裡",
-    "lat": 22.9794852,
-    "lng": 120.2223647,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 153
-  },
-  {
-    "id": 188,
-    "name": "丹丹漢堡 崇德店",
-    "lat": 22.9711604,
-    "lng": 120.2275769,
-    "theme": [
-      "bistro"
-    ],
-    "price": 150,
-    "rating": 4.2,
-    "user_ratings_total": 6012
-  },
-  {
-    "id": 189,
-    "name": "朱熹漢堡",
-    "lat": 22.9939188,
-    "lng": 120.200588,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 724
-  },
-  {
-    "id": 190,
-    "name": "Q Burger 台南裕豐店(直營)",
-    "lat": 22.9870039,
-    "lng": 120.2271538,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 465
-  },
-  {
-    "id": 191,
-    "name": "早餐漢堡大叔",
-    "lat": 22.997469,
-    "lng": 120.228634,
-    "theme": [
-      "bistro"
-    ],
-    "price": 150,
-    "rating": 4.5,
-    "user_ratings_total": 238
-  },
-  {
-    "id": 192,
-    "name": "ABC Burger",
-    "lat": 22.9920132,
-    "lng": 120.1947543,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 2239
-  },
-  {
-    "id": 193,
-    "name": "綿綿土司",
-    "lat": 22.9951211,
-    "lng": 120.2298242,
-    "theme": [
-      "bistro"
-    ],
-    "price": 150,
-    "rating": 4.7,
-    "user_ratings_total": 311
-  },
-  {
-    "id": 194,
-    "name": "翻滾吧！蛋捲",
-    "lat": 22.9905197,
-    "lng": 120.2249135,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 1357
-  },
-  {
-    "id": 195,
-    "name": "默美早午餐（售完為止）",
-    "lat": 22.9851189,
-    "lng": 120.2345779,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 358
-  },
-  {
-    "id": 196,
-    "name": "Little Cuba 小古巴漢堡（5/25-5/27月底公休）",
-    "lat": 22.9898419,
-    "lng": 120.208202,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 1854
-  },
-  {
-    "id": 197,
-    "name": "千香漢堡 東區仁和店",
-    "lat": 22.9715941,
-    "lng": 120.233098,
-    "theme": [
-      "bistro"
-    ],
-    "price": 150,
-    "rating": 4.8,
-    "user_ratings_total": 273
-  },
-  {
-    "id": 198,
-    "name": "蓋拉澳式漢堡-淺草店",
-    "lat": 22.9932391,
-    "lng": 120.1983741,
-    "theme": [
-      "bistro"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 494
-  },
-  {
-    "id": 199,
-    "name": "泉發酒吧",
-    "lat": 22.9886833,
-    "lng": 120.2128986,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 266
-  },
-  {
-    "id": 200,
-    "name": "VIXIV 六 · 十四俱樂部",
-    "lat": 22.9829229,
-    "lng": 120.2281208,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 291
-  },
-  {
-    "id": 201,
-    "name": "無國籍Cheers Bar",
-    "lat": 22.9917396,
-    "lng": 120.2279065,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 406
-  },
-  {
-    "id": 202,
-    "name": "廿一酒吧 Bar 21",
-    "lat": 22.990137,
-    "lng": 120.2333294,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 134
-  },
-  {
-    "id": 203,
+    "id": 179,
     "name": "Swallow 嚥·台南",
     "lat": 23.0002951,
     "lng": 120.2062361,
@@ -2433,10 +3723,103 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 929
+    "user_ratings_total": 929,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 204,
+    "id": 180,
+    "name": "泉發酒吧",
+    "lat": 22.9886833,
+    "lng": 120.2128986,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 266,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: 20:00"
+    ]
+  },
+  {
+    "id": 181,
+    "name": "VIXIV 六 · 十四俱樂部",
+    "lat": 22.9829229,
+    "lng": 120.2281208,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.3,
+    "user_ratings_total": 291,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 20:00",
+      "Wednesday: 20:00",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: 20:00"
+    ]
+  },
+  {
+    "id": 182,
+    "name": "無國籍Cheers Bar",
+    "lat": 22.9917396,
+    "lng": 120.2279065,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 406,
+    "opening_hours": [
+      "Monday: 20:00",
+      "Tuesday: 20:00",
+      "Wednesday: 20:00",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: 20:00"
+    ]
+  },
+  {
+    "id": 183,
+    "name": "廿一酒吧 Bar 21",
+    "lat": 22.990137,
+    "lng": 120.2333294,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.3,
+    "user_ratings_total": 134,
+    "opening_hours": [
+      "Monday: 17:30",
+      "Tuesday: 17:30",
+      "Wednesday: 17:30",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
+  },
+  {
+    "id": 184,
     "name": "BBF Bar",
     "lat": 22.9930489,
     "lng": 120.2125564,
@@ -2445,10 +3828,19 @@
     ],
     "price": 300,
     "rating": 4.6,
-    "user_ratings_total": 102
+    "user_ratings_total": 102,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 21:00",
+      "Wednesday: 21:00",
+      "Thursday: 21:00",
+      "Friday: 21:00",
+      "Saturday: 21:00",
+      "Sunday: 21:00"
+    ]
   },
   {
-    "id": 205,
+    "id": 185,
     "name": "千秋商店 Sake & Listening Bar",
     "lat": 22.9854467,
     "lng": 120.2201188,
@@ -2457,22 +3849,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 104
+    "user_ratings_total": 104,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: Closed"
+    ]
   },
   {
-    "id": 206,
-    "name": "LAZYMOON 月懶氏 酒吧（闆闆休養中(˶‾᷄ ⁻̫ ‾᷅˵)預計六月中下旬復活）",
-    "lat": 22.9970963,
-    "lng": 120.2413017,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 127
-  },
-  {
-    "id": 207,
+    "id": 186,
     "name": "小方舟串燒酒場",
     "lat": 22.9867722,
     "lng": 120.2225991,
@@ -2481,10 +3870,19 @@
     ],
     "price": 450,
     "rating": 4.7,
-    "user_ratings_total": 4994
+    "user_ratings_total": 4994,
+    "opening_hours": [
+      "Monday: 17:30",
+      "Tuesday: 17:30",
+      "Wednesday: 17:30",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
   },
   {
-    "id": 208,
+    "id": 187,
     "name": "酒河原居酒屋",
     "lat": 22.9740682,
     "lng": 120.2236379,
@@ -2493,22 +3891,19 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 1180
+    "user_ratings_total": 1181,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 209,
-    "name": "月灯 居酒屋",
-    "lat": 22.9903465,
-    "lng": 120.2287173,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 5,
-    "user_ratings_total": 63
-  },
-  {
-    "id": 210,
+    "id": 188,
     "name": "原佃燒烤 - 台南",
     "lat": 22.9899984,
     "lng": 120.2355437,
@@ -2517,10 +3912,40 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 719
+    "user_ratings_total": 719,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: Closed"
+    ]
   },
   {
-    "id": 211,
+    "id": 189,
+    "name": "月灯 居酒屋",
+    "lat": 22.9903465,
+    "lng": 120.2287173,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 5,
+    "user_ratings_total": 63,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
+  },
+  {
+    "id": 190,
     "name": "厝边 n.b.r",
     "lat": 22.9898431,
     "lng": 120.2355151,
@@ -2529,10 +3954,19 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 370
+    "user_ratings_total": 370,
+    "opening_hours": [
+      "Monday: 17:45",
+      "Tuesday: 17:45",
+      "Wednesday: Closed",
+      "Thursday: 17:45",
+      "Friday: 17:45",
+      "Saturday: 17:45",
+      "Sunday: 17:45"
+    ]
   },
   {
-    "id": 212,
+    "id": 191,
     "name": "里定食居酒屋",
     "lat": 22.9871375,
     "lng": 120.2226262,
@@ -2541,46 +3975,19 @@
     ],
     "price": 300,
     "rating": 4,
-    "user_ratings_total": 350
+    "user_ratings_total": 350,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:45",
+      "Wednesday: 17:45",
+      "Thursday: 17:45",
+      "Friday: 17:45",
+      "Saturday: 11:45, 17:45",
+      "Sunday: 11:45, 17:45"
+    ]
   },
   {
-    "id": 213,
-    "name": "Ho達串燒酒場",
-    "lat": 22.9869716,
-    "lng": 120.2114558,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 360
-  },
-  {
-    "id": 214,
-    "name": "銀樂日式手創料理",
-    "lat": 22.9878653,
-    "lng": 120.2316298,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 412
-  },
-  {
-    "id": 215,
-    "name": "春宮居酒屋",
-    "lat": 22.987929,
-    "lng": 120.2051691,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 405
-  },
-  {
-    "id": 216,
+    "id": 192,
     "name": "小椿食堂",
     "lat": 22.9915113,
     "lng": 120.2221292,
@@ -2589,46 +3996,61 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 495
+    "user_ratings_total": 495,
+    "opening_hours": [
+      "Monday: 12:00, 18:00",
+      "Tuesday: 12:00, 18:00",
+      "Wednesday: 12:00, 18:00",
+      "Thursday: 12:00, 18:00",
+      "Friday: 12:00, 18:00",
+      "Saturday: 12:00, 18:00",
+      "Sunday: 12:00, 18:00"
+    ]
   },
   {
-    "id": 217,
-    "name": "Nest居酒屋 de 三十八番",
-    "lat": 22.998096,
-    "lng": 120.2021169,
+    "id": 193,
+    "name": "Ho達串燒酒場",
+    "lat": 22.9869716,
+    "lng": 120.2114558,
     "theme": [
       "bar"
     ],
     "price": 300,
-    "rating": 4.4,
-    "user_ratings_total": 1649
+    "rating": 4.9,
+    "user_ratings_total": 360,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
   },
   {
-    "id": 218,
-    "name": "好男人酒窩 食事酒場",
-    "lat": 22.9955553,
-    "lng": 120.2014954,
+    "id": 194,
+    "name": "銀樂日式手創料理",
+    "lat": 22.9878653,
+    "lng": 120.2316298,
     "theme": [
       "bar"
     ],
     "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 311
+    "rating": 4.2,
+    "user_ratings_total": 412,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 219,
-    "name": "大媽活蝦-東和店",
-    "lat": 22.9987105,
-    "lng": 120.2305002,
-    "theme": [
-      "bar"
-    ],
-    "price": 300,
-    "rating": 4.4,
-    "user_ratings_total": 62
-  },
-  {
-    "id": 220,
+    "id": 195,
     "name": "水恃 日式料理",
     "lat": 22.9943608,
     "lng": 120.2313826,
@@ -2637,10 +4059,103 @@
     ],
     "price": 450,
     "rating": 4.8,
-    "user_ratings_total": 2575
+    "user_ratings_total": 2575,
+    "opening_hours": [
+      "Monday: 11:30, 17:00",
+      "Tuesday: 11:30, 17:00",
+      "Wednesday: 11:30, 17:00",
+      "Thursday: 11:30, 17:00",
+      "Friday: 11:30, 17:00",
+      "Saturday: 11:30, 17:00",
+      "Sunday: 11:30, 17:00"
+    ]
   },
   {
-    "id": 221,
+    "id": 196,
+    "name": "春宮居酒屋",
+    "lat": 22.987929,
+    "lng": 120.2051691,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 405,
+    "opening_hours": [
+      "Monday: 17:30",
+      "Tuesday: 17:30",
+      "Wednesday: Closed",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Nest居酒屋 de 三十八番",
+    "lat": 22.998096,
+    "lng": 120.2021169,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.4,
+    "user_ratings_total": 1649,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
+  },
+  {
+    "id": 198,
+    "name": "初樂燒肉-台南東區文化中心店",
+    "lat": 22.9740778,
+    "lng": 120.2230443,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 2799,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
+  },
+  {
+    "id": 199,
+    "name": "唯客多私廚",
+    "lat": 22.9965425,
+    "lng": 120.2338928,
+    "theme": [
+      "bar"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 361,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 09:30, 17:00",
+      "Wednesday: 09:30, 17:00",
+      "Thursday: 09:30, 17:00",
+      "Friday: 09:30, 17:00",
+      "Saturday: 09:30, 17:00",
+      "Sunday: 09:30, 17:00"
+    ]
+  },
+  {
+    "id": 200,
     "name": "東二精釀啤酒吧 Tongoh Craft Beer Bar",
     "lat": 22.9900891,
     "lng": 120.1963034,
@@ -2649,10 +4164,19 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 160
+    "user_ratings_total": 160,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 20:00",
+      "Thursday: 20:00",
+      "Friday: 20:00",
+      "Saturday: 20:00",
+      "Sunday: 20:00"
+    ]
   },
   {
-    "id": 222,
+    "id": 201,
     "name": "漂浪.啤啤 Piao Lounge Beer Taproom",
     "lat": 23.0010955,
     "lng": 120.1953971,
@@ -2661,10 +4185,19 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 119
+    "user_ratings_total": 119,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 19:00",
+      "Thursday: 19:00",
+      "Friday: 19:00",
+      "Saturday: 15:00",
+      "Sunday: 15:00"
+    ]
   },
   {
-    "id": 223,
+    "id": 202,
     "name": "沃隼釀造 WE Drink Beer Company",
     "lat": 22.9978599,
     "lng": 120.19603,
@@ -2673,46 +4206,82 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 675
+    "user_ratings_total": 675,
+    "opening_hours": [
+      "Monday: 16:00",
+      "Tuesday: 16:00",
+      "Wednesday: 16:00",
+      "Thursday: 16:00",
+      "Friday: 16:00",
+      "Saturday: 16:00",
+      "Sunday: 16:00"
+    ]
   },
   {
-    "id": 224,
-    "name": "紅酒時光WineTime",
-    "lat": 22.973498,
-    "lng": 120.2208102,
+    "id": 203,
+    "name": "Corner Square 咫尺角落",
+    "lat": 22.9925058,
+    "lng": 120.2097547,
     "theme": [
       "bar"
     ],
     "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 71
+    "rating": 4.5,
+    "user_ratings_total": 1018,
+    "opening_hours": [
+      "Monday: 10:00",
+      "Tuesday: 10:00",
+      "Wednesday: 10:00",
+      "Thursday: 10:00",
+      "Friday: 10:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
   },
   {
-    "id": 225,
-    "name": "流氓吐司x鍋燒x宵夜專賣店",
-    "lat": 22.9901916,
-    "lng": 120.2355465,
+    "id": 204,
+    "name": "夜甡人進",
+    "lat": 22.9902243,
+    "lng": 120.2269979,
     "theme": [
       "midnight"
     ],
     "price": 300,
-    "rating": 4.2,
-    "user_ratings_total": 331
+    "rating": 4.7,
+    "user_ratings_total": 830,
+    "opening_hours": [
+      "Monday: 16:30",
+      "Tuesday: 16:30",
+      "Wednesday: 16:30",
+      "Thursday: 16:30",
+      "Friday: 16:30",
+      "Saturday: 16:30",
+      "Sunday: 16:30"
+    ]
   },
   {
-    "id": 226,
-    "name": "振香永和豆漿大王",
-    "lat": 22.975581,
-    "lng": 120.2142021,
+    "id": 205,
+    "name": "穀奈good night-台南樹林總店",
+    "lat": 22.9858196,
+    "lng": 120.203668,
     "theme": [
       "midnight"
     ],
     "price": 150,
-    "rating": 3.9,
-    "user_ratings_total": 1010
+    "rating": 4.1,
+    "user_ratings_total": 422,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 227,
+    "id": 206,
     "name": "小東路麻辣關東煮",
     "lat": 23.0002269,
     "lng": 120.2258485,
@@ -2721,10 +4290,53 @@
     ],
     "price": 150,
     "rating": 3.9,
-    "user_ratings_total": 1092
+    "user_ratings_total": 1092,
+    "opening_hours": []
   },
   {
-    "id": 228,
+    "id": 207,
+    "name": "流氓吐司x鍋燒x宵夜專賣店",
+    "lat": 22.9901916,
+    "lng": 120.2355465,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.2,
+    "user_ratings_total": 331,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
+  },
+  {
+    "id": 208,
+    "name": "GAMMA(尬麻)火鍋聚場_XM餐飲-東區和牛火鍋|海鮮火鍋|宵夜推薦|吃到飽餐廳|聚餐餐廳|必吃美食",
+    "lat": 22.9914289,
+    "lng": 120.2341029,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.5,
+    "user_ratings_total": 1911,
+    "opening_hours": [
+      "Monday: 11:00, 17:30",
+      "Tuesday: 11:00, 17:30",
+      "Wednesday: 11:00, 17:30",
+      "Thursday: 11:00, 17:30",
+      "Friday: 11:00, 17:30",
+      "Saturday: 11:00, 17:30",
+      "Sunday: 11:00, 17:30"
+    ]
+  },
+  {
+    "id": 209,
     "name": "深夜拾牛 Midnight Sandwich",
     "lat": 22.9675667,
     "lng": 120.2315783,
@@ -2733,10 +4345,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 123
+    "user_ratings_total": 123,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: Closed"
+    ]
   },
   {
-    "id": 229,
+    "id": 210,
     "name": "南夜滷物（林森店，最後點餐01:30）",
     "lat": 22.9821791,
     "lng": 120.2169081,
@@ -2745,10 +4366,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 61
+    "user_ratings_total": 61,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: Closed"
+    ]
   },
   {
-    "id": 230,
+    "id": 211,
     "name": "隔壁宵夜 中華東店｜寵物友善餐廳",
     "lat": 22.9787858,
     "lng": 120.2271528,
@@ -2757,10 +4387,40 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 680
+    "user_ratings_total": 679,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 19:00",
+      "Sunday: 19:00"
+    ]
   },
   {
-    "id": 231,
+    "id": 212,
+    "name": "久久家常菜熱炒乾鍋",
+    "lat": 22.9820771,
+    "lng": 120.2284351,
+    "theme": [
+      "midnight"
+    ],
+    "price": 150,
+    "rating": 3.8,
+    "user_ratings_total": 691,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 10:00",
+      "Sunday: 10:00"
+    ]
+  },
+  {
+    "id": 213,
     "name": "河馬大口吃(晚餐.宵夜/煎饅頭.煎吐司.豆皮蛋餅.鍋燒.炸雞腳)",
     "lat": 22.9698507,
     "lng": 120.230879,
@@ -2769,22 +4429,40 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 58
+    "user_ratings_total": 58,
+    "opening_hours": [
+      "Monday: 16:30",
+      "Tuesday: 16:30",
+      "Wednesday: Closed",
+      "Thursday: 16:30",
+      "Friday: 16:30",
+      "Saturday: 16:30",
+      "Sunday: 16:30"
+    ]
   },
   {
-    "id": 232,
-    "name": "飽芝林關東煮",
-    "lat": 22.9936315,
-    "lng": 120.2267558,
+    "id": 214,
+    "name": "想要吃食堂",
+    "lat": 22.9950597,
+    "lng": 120.2334735,
     "theme": [
       "midnight"
     ],
-    "price": 150,
-    "rating": 4.1,
-    "user_ratings_total": 2057
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 264,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 11:00, 17:00",
+      "Wednesday: 11:00, 17:00",
+      "Thursday: 11:00, 17:00",
+      "Friday: 11:00, 17:00",
+      "Saturday: 11:00, 17:00",
+      "Sunday: 11:00, 17:00"
+    ]
   },
   {
-    "id": 233,
+    "id": 215,
     "name": "台南宵夜 歐爺熱狗堡OHYEAH HOTDOGS｜凌晨2點後僅提供外帶",
     "lat": 22.992086,
     "lng": 120.2200099,
@@ -2793,70 +4471,19 @@
     ],
     "price": 300,
     "rating": 4.2,
-    "user_ratings_total": 129
+    "user_ratings_total": 129,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: 19:00",
+      "Wednesday: 19:00",
+      "Thursday: Closed",
+      "Friday: 18:30",
+      "Saturday: 19:00",
+      "Sunday: 18:00"
+    ]
   },
   {
-    "id": 234,
-    "name": "一點刈包",
-    "lat": 22.9999908,
-    "lng": 120.2270043,
-    "theme": [
-      "midnight"
-    ],
-    "price": 150,
-    "rating": 4,
-    "user_ratings_total": 3087
-  },
-  {
-    "id": 235,
-    "name": "塚越七町目 麵食堂",
-    "lat": 22.9809828,
-    "lng": 120.2128322,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 300
-  },
-  {
-    "id": 236,
-    "name": "T&F 手作吐司 府連東路店",
-    "lat": 22.9844641,
-    "lng": 120.2171725,
-    "theme": [
-      "midnight"
-    ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 832
-  },
-  {
-    "id": 237,
-    "name": "鹿耳晚晚早餐｜鹿耳夜間部",
-    "lat": 22.9842419,
-    "lng": 120.2151697,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.5,
-    "user_ratings_total": 3319
-  },
-  {
-    "id": 238,
-    "name": "崇德（米糕四神湯）",
-    "lat": 22.9719312,
-    "lng": 120.2273734,
-    "theme": [
-      "midnight"
-    ],
-    "price": 150,
-    "rating": 4.2,
-    "user_ratings_total": 204
-  },
-  {
-    "id": 239,
+    "id": 216,
     "name": "碳霸複合式串燒",
     "lat": 22.9767202,
     "lng": 120.2211491,
@@ -2865,22 +4492,19 @@
     ],
     "price": 300,
     "rating": 4.8,
-    "user_ratings_total": 652
+    "user_ratings_total": 652,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 240,
-    "name": "上榮新疆烤肉串（裕農店）/restaurants/台南美食/台南串燒/takeout/推薦晚餐/台南宵夜",
-    "lat": 22.9892121,
-    "lng": 120.2386224,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 109
-  },
-  {
-    "id": 241,
+    "id": 217,
     "name": "月月串燒 Moonlight BBQ",
     "lat": 22.9929295,
     "lng": 120.2130984,
@@ -2889,106 +4513,40 @@
     ],
     "price": 300,
     "rating": 4.5,
-    "user_ratings_total": 821
+    "user_ratings_total": 821,
+    "opening_hours": [
+      "Monday: 17:30",
+      "Tuesday: 17:30",
+      "Wednesday: 17:30",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
   },
   {
-    "id": 242,
-    "name": "路邊烤肉WildBBQ 台南林森店",
-    "lat": 22.9863102,
-    "lng": 120.2229804,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 146
-  },
-  {
-    "id": 243,
-    "name": "午寺山串燒酒場",
-    "lat": 23.0012181,
-    "lng": 120.228306,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 223
-  },
-  {
-    "id": 244,
-    "name": "蕭烤小店（宵夜 炭烤 串燒 ）",
-    "lat": 23.0011336,
-    "lng": 120.2291289,
+    "id": 218,
+    "name": "上榮新疆烤肉串（裕農店）/restaurants/台南美食/台南串燒/takeout/推薦晚餐/台南宵夜",
+    "lat": 22.9892121,
+    "lng": 120.2386224,
     "theme": [
       "midnight"
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 96
+    "user_ratings_total": 109,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 245,
-    "name": "灷．日式串燒酒場",
-    "lat": 22.9921264,
-    "lng": 120.2067729,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.8,
-    "user_ratings_total": 321
-  },
-  {
-    "id": 246,
-    "name": "三頑子鐵板串燒＆美食＆宵夜＆燒烤",
-    "lat": 22.9719596,
-    "lng": 120.2285287,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 161
-  },
-  {
-    "id": 247,
-    "name": "富治串燒 台南店",
-    "lat": 23.001904,
-    "lng": 120.2060378,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 248
-  },
-  {
-    "id": 248,
-    "name": "青木森串燒小料理（公休看粉專）",
-    "lat": 23.0142217,
-    "lng": 120.2211913,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 359
-  },
-  {
-    "id": 249,
-    "name": "3号燒烤美食",
-    "lat": 22.9870152,
-    "lng": 120.2187718,
-    "theme": [
-      "midnight"
-    ],
-    "price": 300,
-    "rating": 4.9,
-    "user_ratings_total": 1710
-  },
-  {
-    "id": 250,
+    "id": 219,
     "name": "陜秦辣妹子-純手工扯麵涼皮",
     "lat": 22.9763019,
     "lng": 120.2141214,
@@ -2997,10 +4555,187 @@
     ],
     "price": 300,
     "rating": 4.1,
-    "user_ratings_total": 214
+    "user_ratings_total": 214,
+    "opening_hours": [
+      "Monday: 11:00",
+      "Tuesday: 11:00",
+      "Wednesday: 11:00",
+      "Thursday: 11:00",
+      "Friday: 11:00",
+      "Saturday: 11:00",
+      "Sunday: 11:00"
+    ]
   },
   {
-    "id": 251,
+    "id": 220,
+    "name": "路邊烤肉WildBBQ 台南林森店",
+    "lat": 22.9863102,
+    "lng": 120.2229804,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 146,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
+  },
+  {
+    "id": 221,
+    "name": "午寺山串燒酒場",
+    "lat": 23.0012181,
+    "lng": 120.228306,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.6,
+    "user_ratings_total": 223,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:30",
+      "Wednesday: 17:30",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
+  },
+  {
+    "id": 222,
+    "name": "灷．日式串燒酒場",
+    "lat": 22.9921264,
+    "lng": 120.2067729,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.8,
+    "user_ratings_total": 321,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:30",
+      "Saturday: 18:30",
+      "Sunday: 18:00"
+    ]
+  },
+  {
+    "id": 223,
+    "name": "蕭烤小店（宵夜 炭烤 串燒 ）",
+    "lat": 23.0011336,
+    "lng": 120.2291289,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 96,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 18:30",
+      "Wednesday: 18:30",
+      "Thursday: 18:30",
+      "Friday: 18:30",
+      "Saturday: 18:30",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 224,
+    "name": "富治串燒 台南店",
+    "lat": 23.001904,
+    "lng": 120.2060378,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.7,
+    "user_ratings_total": 248,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: 18:00",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
+  },
+  {
+    "id": 225,
+    "name": "三頑子鐵板串燒＆美食＆宵夜＆燒烤",
+    "lat": 22.9719596,
+    "lng": 120.2285287,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.3,
+    "user_ratings_total": 161,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
+  },
+  {
+    "id": 226,
+    "name": "青木森串燒小料理（公休看粉專）",
+    "lat": 23.0142217,
+    "lng": 120.2211913,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 359,
+    "opening_hours": [
+      "Monday: 17:30",
+      "Tuesday: 17:30",
+      "Wednesday: 17:30",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
+  },
+  {
+    "id": 227,
+    "name": "3号燒烤美食",
+    "lat": 22.9870152,
+    "lng": 120.2187718,
+    "theme": [
+      "midnight"
+    ],
+    "price": 300,
+    "rating": 4.9,
+    "user_ratings_total": 1710,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:30",
+      "Wednesday: 17:30",
+      "Thursday: 17:30",
+      "Friday: 17:30",
+      "Saturday: 17:30",
+      "Sunday: 17:30"
+    ]
+  },
+  {
+    "id": 228,
     "name": "東寧巨無霸烤肉啤酒屋(東寧店)",
     "lat": 22.9898882,
     "lng": 120.2280842,
@@ -3009,10 +4744,19 @@
     ],
     "price": 300,
     "rating": 4.2,
-    "user_ratings_total": 254
+    "user_ratings_total": 254,
+    "opening_hours": [
+      "Monday: 18:00",
+      "Tuesday: Closed",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
   },
   {
-    "id": 252,
+    "id": 229,
     "name": "炭水化合物",
     "lat": 22.9894144,
     "lng": 120.2110416,
@@ -3021,10 +4765,19 @@
     ],
     "price": 300,
     "rating": 4.6,
-    "user_ratings_total": 191
+    "user_ratings_total": 191,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: Closed",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 253,
+    "id": 230,
     "name": "正統台灣第一家鹹酥雞 裕農店",
     "lat": 22.9885206,
     "lng": 120.2360869,
@@ -3033,10 +4786,19 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 823
+    "user_ratings_total": 823,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 254,
+    "id": 231,
     "name": "ICHIRO (一起囉) 香爆鹽酥雞",
     "lat": 22.9854391,
     "lng": 120.2324875,
@@ -3045,10 +4807,19 @@
     ],
     "price": 300,
     "rating": 4.2,
-    "user_ratings_total": 763
+    "user_ratings_total": 763,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 255,
+    "id": 232,
     "name": "好味道香酥雞",
     "lat": 22.9894287,
     "lng": 120.2250612,
@@ -3057,10 +4828,19 @@
     ],
     "price": 150,
     "rating": 4.4,
-    "user_ratings_total": 401
+    "user_ratings_total": 401,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 18:00",
+      "Thursday: 18:00",
+      "Friday: 18:00",
+      "Saturday: 18:00",
+      "Sunday: 18:00"
+    ]
   },
   {
-    "id": 256,
+    "id": 233,
     "name": "佳味鹹酥雞-榮譽店",
     "lat": 22.9748571,
     "lng": 120.2178243,
@@ -3069,22 +4849,19 @@
     ],
     "price": 300,
     "rating": 4.9,
-    "user_ratings_total": 110
+    "user_ratings_total": 110,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 14:00",
+      "Wednesday: 14:00",
+      "Thursday: 14:00",
+      "Friday: 14:00",
+      "Saturday: 14:00",
+      "Sunday: 14:00"
+    ]
   },
   {
-    "id": 257,
-    "name": "金雞廣場鹹酥雞（裕農總店）",
-    "lat": 22.988808,
-    "lng": 120.2366231,
-    "theme": [
-      "midnight"
-    ],
-    "price": 150,
-    "rating": 4.1,
-    "user_ratings_total": 217
-  },
-  {
-    "id": 258,
+    "id": 234,
     "name": "台灣第一家鹽酥雞",
     "lat": 22.9976325,
     "lng": 120.2317591,
@@ -3093,22 +4870,40 @@
     ],
     "price": 300,
     "rating": 4,
-    "user_ratings_total": 275
+    "user_ratings_total": 275,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 16:30",
+      "Wednesday: 16:30",
+      "Thursday: 16:30",
+      "Friday: 16:30",
+      "Saturday: 16:30",
+      "Sunday: 16:30"
+    ]
   },
   {
-    "id": 259,
-    "name": "正統台灣第一家鹹酥雞 台南崇德店",
-    "lat": 22.9749089,
-    "lng": 120.2260469,
+    "id": 235,
+    "name": "金雞廣場鹹酥雞（裕農總店）",
+    "lat": 22.988808,
+    "lng": 120.2366231,
     "theme": [
       "midnight"
     ],
-    "price": 300,
-    "rating": 4.7,
-    "user_ratings_total": 159
+    "price": 150,
+    "rating": 4.1,
+    "user_ratings_total": 217,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 260,
+    "id": 236,
     "name": "東光鹹酥雞",
     "lat": 22.9948624,
     "lng": 120.232806,
@@ -3117,34 +4912,40 @@
     ],
     "price": 150,
     "rating": 4.2,
-    "user_ratings_total": 419
+    "user_ratings_total": 419,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 16:00",
+      "Wednesday: 16:00",
+      "Thursday: 16:00",
+      "Friday: 16:00",
+      "Saturday: 16:00",
+      "Sunday: 16:00"
+    ]
   },
   {
-    "id": 261,
-    "name": "巧味鹹酥雞大王後甲店",
-    "lat": 22.9885341,
-    "lng": 120.236299,
+    "id": 237,
+    "name": "正統台灣第一家鹹酥雞 台南崇德店",
+    "lat": 22.9749089,
+    "lng": 120.2260469,
     "theme": [
       "midnight"
     ],
     "price": 300,
-    "rating": 4.6,
-    "user_ratings_total": 387
+    "rating": 4.7,
+    "user_ratings_total": 159,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 16:00",
+      "Wednesday: 16:00",
+      "Thursday: 16:00",
+      "Friday: 16:00",
+      "Saturday: 16:00",
+      "Sunday: 16:00"
+    ]
   },
   {
-    "id": 262,
-    "name": "鳳凰來手作炸雞屋-東區必吃雞排|炸物推薦|人氣雞排|必吃宵夜|炸雞專賣店|在地推薦炸物|特色炸雞|必吃炸雞",
-    "lat": 22.9907829,
-    "lng": 120.2211624,
-    "theme": [
-      "midnight"
-    ],
-    "price": 150,
-    "rating": 4.6,
-    "user_ratings_total": 334
-  },
-  {
-    "id": 263,
+    "id": 238,
     "name": "白妞鹹酥雞-崇善店（宵夜推薦、必吃美食）",
     "lat": 22.9771832,
     "lng": 120.2275022,
@@ -3153,22 +4954,61 @@
     ],
     "price": 300,
     "rating": 4.3,
-    "user_ratings_total": 153
+    "user_ratings_total": 153,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 264,
-    "name": "榮哥鹹酥雞",
-    "lat": 22.975213,
-    "lng": 120.2181425,
+    "id": 239,
+    "name": "巧味鹹酥雞大王後甲店",
+    "lat": 22.9885341,
+    "lng": 120.236299,
     "theme": [
       "midnight"
     ],
     "price": 300,
-    "rating": 4.3,
-    "user_ratings_total": 307
+    "rating": 4.6,
+    "user_ratings_total": 387,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: Closed",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 265,
+    "id": 240,
+    "name": "鳳凰來手作炸雞屋-東區必吃雞排|炸物推薦|人氣雞排|必吃宵夜|炸雞專賣店|在地推薦炸物|特色炸雞|必吃炸雞",
+    "lat": 22.9907829,
+    "lng": 120.2211624,
+    "theme": [
+      "midnight"
+    ],
+    "price": 150,
+    "rating": 4.6,
+    "user_ratings_total": 334,
+    "opening_hours": [
+      "Monday: 16:00",
+      "Tuesday: 16:00",
+      "Wednesday: 16:00",
+      "Thursday: Closed",
+      "Friday: 16:00",
+      "Saturday: 16:00",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 241,
     "name": "蘋果雞鹹酥雞 台南東區店請使用官方賴訂購:@572otcwe",
     "lat": 22.9819308,
     "lng": 120.2343444,
@@ -3177,22 +5017,40 @@
     ],
     "price": 300,
     "rating": 4.7,
-    "user_ratings_total": 143
+    "user_ratings_total": 143,
+    "opening_hours": [
+      "Monday: 16:00",
+      "Tuesday: Closed",
+      "Wednesday: 16:00",
+      "Thursday: 16:00",
+      "Friday: 16:00",
+      "Saturday: 16:00",
+      "Sunday: 16:00"
+    ]
   },
   {
-    "id": 266,
-    "name": "中華市讚鹹酥雞-台南富農店",
-    "lat": 22.9878227,
-    "lng": 120.235466,
+    "id": 242,
+    "name": "榮哥鹹酥雞",
+    "lat": 22.975213,
+    "lng": 120.2181425,
     "theme": [
       "midnight"
     ],
     "price": 300,
-    "rating": 4.4,
-    "user_ratings_total": 151
+    "rating": 4.3,
+    "user_ratings_total": 307,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 267,
+    "id": 243,
     "name": "鹹酥雞",
     "lat": 22.9877264,
     "lng": 120.2162533,
@@ -3201,34 +5059,40 @@
     ],
     "price": 150,
     "rating": 3.9,
-    "user_ratings_total": 133
+    "user_ratings_total": 133,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 16:30",
+      "Thursday: 16:30",
+      "Friday: 16:30",
+      "Saturday: 16:30",
+      "Sunday: 16:30"
+    ]
   },
   {
-    "id": 268,
-    "name": "巧味鹹酥雞",
-    "lat": 22.9863821,
-    "lng": 120.2114196,
+    "id": 244,
+    "name": "中華市讚鹹酥雞-台南富農店",
+    "lat": 22.9878227,
+    "lng": 120.235466,
     "theme": [
       "midnight"
     ],
-    "price": 150,
-    "rating": 4.3,
-    "user_ratings_total": 521
+    "price": 300,
+    "rating": 4.4,
+    "user_ratings_total": 151,
+    "opening_hours": [
+      "Monday: Closed",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   },
   {
-    "id": 269,
-    "name": "楊媽媽鹽酥雞",
-    "lat": 22.9752795,
-    "lng": 120.2184419,
-    "theme": [
-      "midnight"
-    ],
-    "price": 150,
-    "rating": 4.2,
-    "user_ratings_total": 392
-  },
-  {
-    "id": 270,
+    "id": 245,
     "name": "白妞鹹酥雞-南紡店",
     "lat": 22.99569,
     "lng": 120.2290799,
@@ -3237,6 +5101,57 @@
     ],
     "price": 300,
     "rating": 4.4,
-    "user_ratings_total": 416
+    "user_ratings_total": 416,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: 17:00",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
+  },
+  {
+    "id": 246,
+    "name": "巧味鹹酥雞",
+    "lat": 22.9863821,
+    "lng": 120.2114196,
+    "theme": [
+      "midnight"
+    ],
+    "price": 150,
+    "rating": 4.3,
+    "user_ratings_total": 521,
+    "opening_hours": [
+      "Monday: 16:30",
+      "Tuesday: 16:30",
+      "Wednesday: 16:30",
+      "Thursday: Closed",
+      "Friday: 16:30",
+      "Saturday: 16:30",
+      "Sunday: Closed"
+    ]
+  },
+  {
+    "id": 247,
+    "name": "楊媽媽鹽酥雞",
+    "lat": 22.9752795,
+    "lng": 120.2184419,
+    "theme": [
+      "midnight"
+    ],
+    "price": 150,
+    "rating": 4.2,
+    "user_ratings_total": 392,
+    "opening_hours": [
+      "Monday: 17:00",
+      "Tuesday: 17:00",
+      "Wednesday: 17:00",
+      "Thursday: Closed",
+      "Friday: 17:00",
+      "Saturday: 17:00",
+      "Sunday: 17:00"
+    ]
   }
 ]
