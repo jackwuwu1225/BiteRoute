@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+import random
+
 from fastapi import APIRouter, Request
 
 from core.constants import SHAPE_MATRICES, SHAPE_ZH_NAMES, THEME_MAPPING, MIN_FILTERED
@@ -8,25 +11,26 @@ from models.schemas import RouteRequest, RouteResponse
 
 router = APIRouter(prefix="/api/v1")
 
+
 def _open_points(tpoints: list[tuple[float, float]]) -> list[tuple[float, float]]:
     if len(tpoints) > 1 and tpoints[0] == tpoints[-1]:
         return list(tpoints[:-1])
     return list(tpoints)
 
+
 def _is_open_today(restaurant: dict, current_day: str) -> bool:
     if not current_day:
         return True
-    
     opening_hours = restaurant.get("opening_hours", [])
     if not opening_hours:
         return True
-        
     for day_str in opening_hours:
         if day_str.startswith(current_day):
             if "Closed" in day_str:
                 return False
             return True
     return True
+
 
 @router.post("/generate_route", response_model=RouteResponse)
 def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
@@ -60,10 +64,14 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
         except (ValueError, AttributeError):
             departure_minutes = None
 
+    shape_names = list(SHAPE_MATRICES.keys())
+    random.shuffle(shape_names)
+
     best: TemplateResult | None = None
     best_name: str | None = None
 
-    for tname, tpoints in SHAPE_MATRICES.items():
+    for tname in shape_names:
+        tpoints = SHAPE_MATRICES[tname]
         open_pts = _open_points(tpoints)
         if len(open_pts) > len(filtered):
             continue
@@ -76,9 +84,10 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
             departure_minutes,
         )
 
-        if result.assignments is not None and (best is None or result.score > best.score):
+        if result.assignments is not None:
             best = result
             best_name = tname
+            break
 
     if best is None or best.assignments is None:
         return RouteResponse(

@@ -10,15 +10,33 @@ SEARCH_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
 DETAILS_URL = "https://maps.googleapis.com/maps/api/place/details/json"
 
 SEARCH_MATRIX = {
-    "dessert": ["台南市東區 甜點", "台南市東區 冰品", "台南市東區 蛋糕"],
-    "cafe": ["台南市東區 咖啡廳", "台南市東區 下午茶", "台南市東區 獨立咖啡"],
-    "local": ["台南市東區 牛肉湯", "台南市東區 傳統小吃", "台南市東區 意麵", "台南市東區 肉燥飯"],
-    "bistro": ["台南市東區 餐酒館", "台南市東區 飛鏢吧"],
-    "bar": ["台南市東區 酒吧", "台南市東區 居酒屋", "台南市東區 啤酒吧"],
-    "midnight": ["台南市東區 宵夜", "台南市東區 串燒", "台南市東區 鹹酥雞"]
+    "dessert": [
+        "台南市東區 甜點", "台南市東區 冰品", "台南市東區 蛋糕", 
+        "台南市東區 豆花", "成大商圈 甜點", "台南市東區 宵夜甜點"
+    ],
+    "cafe": [
+        "台南市東區 咖啡廳", "台南市東區 下午茶", "台南市東區 獨立咖啡", 
+        "成大附近 咖啡", "台南市東區 讀書咖啡廳", "台南市東區 甜點咖啡"
+    ],
+    "local": [
+        "台南市東區 牛肉湯", "台南市東區 傳統小吃", "台南市東區 意麵", 
+        "台南市東區 肉燥飯", "育樂街 美食", "台南市東區 勝利路 小吃", 
+        "成大 美食", "台南市東區 鍋燒意麵", "台南市東區 滷味"
+    ],
+    "bistro": [
+        "台南市東區 餐酒館", "台南市東區 飛鏢吧", "成大 餐酒館", 
+        "台南市東區 西班牙小酒館"
+    ],
+    "bar": [
+        "台南市東區 酒吧", "台南市東區 居酒屋", "台南市東區 啤酒吧", 
+        "東區 運動酒吧", "台南市東區 調酒", "台南市東區 精釀啤酒"
+    ],
+    "midnight": [
+        "台南市東區 宵夜", "台南市東區 串燒", "台南市東區 鹹酥雞", 
+        "東區 深夜食堂", "育樂街 宵夜", "台南市東區 熱炒", "台南市東區 燒烤"
+    ]
 }
 
-# 中翻英的星期對照表
 DAY_MAPPING = {
     "星期一": "Monday",
     "星期二": "Tuesday",
@@ -31,17 +49,13 @@ DAY_MAPPING = {
 }
 
 def clean_opening_hours(weekday_text: list) -> list:
-    """過濾掉關店時間，只保留開店時間，並將星期與狀態轉換為英文"""
     open_times_only = []
     for day_str in weekday_text:
-        
-        # 1. 替換星期幾為英文
         for zh_day, en_day in DAY_MAPPING.items():
             if day_str.startswith(zh_day):
                 day_str = day_str.replace(zh_day, en_day, 1)
                 break
 
-        # 2. 處理特殊狀態 (休息 / 24小時)
         if "休息" in day_str or "Closed" in day_str:
             day_str = day_str.replace("休息", "Closed")
             open_times_only.append(day_str)
@@ -52,30 +66,26 @@ def clean_opening_hours(weekday_text: list) -> list:
             continue
             
         try:
-            # 3. 解析時間區間 (例如 "Monday: 11:00 – 14:00, 17:00 – 21:00")
             day_name, times = day_str.split(":", 1)
             sessions = times.split(",")
             open_sessions = []
             
             for s in sessions:
-                # 兼容 Google 可能使用的各種破折號 (–, -, ~) 並切出開始時間
                 start_time = s.split("–")[0].split("-")[0].split("~")[0].strip()
                 open_sessions.append(start_time)
                 
             open_times_only.append(f"{day_name.strip()}: {', '.join(open_sessions)}")
         except:
-            # 如果解析失敗，就退回原本的字串防呆
             open_times_only.append(day_str)
             
     return open_times_only
-
 
 def fetch_massive_data():
     all_restaurants = []
     seen_place_ids = set()
     current_id = 1
 
-    print("🚀 開始抓取東區餐廳資料與開店時間 (英文化版本)...")
+    print("🚀 開始抓取東區餐廳資料與開店時間 (高容錯隱藏神店版)...")
 
     for theme, queries in SEARCH_MATRIX.items():
         for query in queries:
@@ -83,7 +93,7 @@ def fetch_massive_data():
             params = {
                 "query": query,
                 "key": API_KEY,
-                "language": "zh-TW" # 這裡維持 zh-TW 確保時間格式是 24 小時制
+                "language": "zh-TW" 
             }
 
             while True:
@@ -102,24 +112,24 @@ def fetch_massive_data():
                     
                     total_ratings = place.get("user_ratings_total", 0)
                     rating = place.get("rating", 0)
-                    if total_ratings < 50 or rating < 3.5:
+                    
+                    # === 關鍵修改點：放寬評論數，死守高星級 ===
+                    if total_ratings < 15 or rating < 3.8:
                         continue
 
                     price_level = place.get("price_level", 2)
                     estimated_price = price_level * 150 if price_level > 0 else 200
 
-                    # 呼叫 Details API 取得營業時間
                     details_params = {
                         "place_id": place_id,
                         "fields": "opening_hours",
                         "key": API_KEY,
-                        "language": "zh-TW" # 維持抓中文再用自己寫的邏輯翻譯
+                        "language": "zh-TW" 
                     }
                     details_response = requests.get(DETAILS_URL, params=details_params).json()
                     opening_hours = details_response.get("result", {}).get("opening_hours", {})
                     raw_weekday_text = opening_hours.get("weekday_text", [])
                     
-                    # 進行時間清理與英文化
                     clean_weekday_text = clean_opening_hours(raw_weekday_text)
 
                     restaurant = {
