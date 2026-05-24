@@ -110,6 +110,23 @@
 
         <div class="border-t border-white/5"></div>
 
+        <div>
+          <div class="flex justify-between items-baseline mb-3">
+            <label class="text-white/40 text-xs tracking-widest uppercase flex items-center gap-2"
+                   for="departureTime">
+              <i class="fa-solid fa-clock" style="font-size:10px;color:#a78bfa;"></i>
+              出發時間
+            </label>
+            <span class="text-white/25 text-xs">留空則不篩選營業時間</span>
+          </div>
+          <input type="time" id="departureTime"
+                 class="w-full rounded-xl px-4 py-2.5 text-white text-sm font-medium"
+                 style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);
+                        outline:none;color-scheme:dark;" />
+        </div>
+
+        <div class="border-t border-white/5"></div>
+
         <button id="btnGenerate"
                 class="btn-generate w-full py-4 rounded-2xl text-white font-bold text-base tracking-wide
                        flex items-center justify-center gap-2.5">

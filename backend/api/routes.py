@@ -38,6 +38,11 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
     lat_scale, lng_scale = lat_lng_scales(req.user_lat, req.search_radius_meters)
     tree, _ = build_kdtree(filtered)
 
+    departure_minutes: int | None = None
+    if req.departure_time:
+        h, m = req.departure_time.split(":")
+        departure_minutes = int(h) * 60 + int(m)
+
     best: TemplateResult | None = None
     best_name: str | None = None
 
@@ -51,6 +56,7 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
             req.user_lat, req.user_lng,
             lat_scale, lng_scale,
             req.total_budget,
+            departure_minutes,
         )
 
         if result.assignments is not None and (best is None or result.score > best.score):

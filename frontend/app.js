@@ -1,13 +1,17 @@
 // API endpoint for route generation
 const API_URL = 'http://127.0.0.1:8000/api/v1/generate_route';
 
-// 5-shape Chinese display names (mirrors backend SHAPE_ZH_NAMES)
+// Shape Chinese display names (mirrors backend SHAPE_ZH_NAMES)
 const SHAPE_ZH = {
-  triangle: '三角',
-  square:   '正方',
-  line:     '直線',
-  v_shape:  'V形',
-  diamond:  '菱形',
+  triangle:       '三角',
+  square:         '正方',
+  v_shape:        'V形',
+  diamond:        '菱形',
+  orion:          '獵戶座',
+  big_dipper:     '北斗七星',
+  southern_cross: '南十字座',
+  cassiopeia:     '仙后座',
+  scorpius:       '天蠍座',
 };
 
 let selectedTheme = 'dessert_run';
@@ -145,6 +149,7 @@ async function generateRoute() {
         total_budget:         budget,
         user_lat:             position.coords.latitude,
         user_lng:             position.coords.longitude,
+        departure_time:       document.getElementById('departureTime').value || null,
       }),
     });
 
