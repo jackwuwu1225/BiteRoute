@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 import folium
 from branca.element import Element as BrancaElement
 
-from core.constants import GLOW_LAYERS, MARKER_PALETTE, NEON_CYAN, SHAPE_ZH_NAMES
+from core.constants import CLOSED_SHAPES, GLOW_LAYERS, MARKER_PALETTE, NEON_CYAN, SHAPE_ZH_NAMES
 from core.optimizer import Candidate
 
 
@@ -21,7 +22,7 @@ def build_map(chosen: list[Candidate], shape_name: str) -> str:
     zh_name = SHAPE_ZH_NAMES.get(shape_name, shape_name)
     _inject_overlay(m, zh_name)
     _add_markers(m, chosen)
-    _add_glow_polyline(m, chosen)
+    _add_glow_polyline(m, chosen, shape_name)
 
     return m._repr_html_()
 
@@ -70,13 +71,13 @@ def _add_markers(m: folium.Map, chosen: list[Candidate]) -> None:
         ).add_to(m)
 
 
-def _add_glow_polyline(m: folium.Map, chosen: list[Candidate]) -> None:
-    route_coords = [[c.lat, c.lng] for c in chosen]
-    route_coords.append(route_coords[0])
+def _add_glow_polyline(m: folium.Map, chosen: list[Candidate], shape_name: str) -> None:
+    coords = [[c.lat, c.lng] for c in chosen]
+    draw_coords = coords + [coords[0]] if shape_name in CLOSED_SHAPES else coords
 
     for weight, opacity in GLOW_LAYERS:
         folium.PolyLine(
-            route_coords,
+            draw_coords,
             color=NEON_CYAN,
             weight=weight,
             opacity=opacity,

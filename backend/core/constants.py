@@ -1,70 +1,35 @@
+# -*- coding: utf-8 -*-
 SHAPE_MATRICES: dict[str, list[tuple[float, float]]] = {
-    # --- original geometric shapes (kept for demo) ---
-    "triangle": [(-0.8, -0.5), (0.0,  0.8), (0.8, -0.5), (-0.8, -0.5)],
-    "square":   [(-0.5,  0.5), (0.5,  0.5), (0.5, -0.5), (-0.5, -0.5), (-0.5, 0.5)],
-    "v_shape":  [(-0.6,  0.6), (0.0, -0.6), (0.6,  0.6)],
-    "diamond":  [(0.0,   0.8), (0.5,  0.0), (0.0, -0.8), (-0.5,  0.0), (0.0,  0.8)],
-
-    # --- real constellation coordinates (lng_offset, lat_offset) ---
-    # Orion: Betelgeuse, Bellatrix → Mintaka, Alnilam, Alnitak (belt) → Saiph, Rigel
-    "orion": [
-        (-0.30,  0.85),
-        ( 0.30,  0.78),
-        (-0.14,  0.12),
-        ( 0.00,  0.08),
-        ( 0.14,  0.04),
-        (-0.22, -0.72),
-        ( 0.35, -0.82),
-    ],
-    # Big Dipper: Dubhe, Merak, Phekda, Megrez (bowl) → Alioth, Mizar, Alkaid (handle)
-    "big_dipper": [
-        (-0.72,  0.62),
-        (-0.72,  0.22),
-        (-0.30,  0.18),
-        (-0.28,  0.58),
-        ( 0.08,  0.72),
-        ( 0.45,  0.62),
-        ( 0.82, -0.08),
-    ],
-    # Southern Cross: Acrux, Mimosa, Gacrux, Imai, Ginan
-    "southern_cross": [
-        ( 0.00, -0.85),
-        ( 0.70,  0.05),
-        ( 0.00,  0.82),
-        (-0.65,  0.00),
-        ( 0.12, -0.18),
-    ],
-    # Cassiopeia W-shape: Segin, Ruchbah, Gamma Cas, Schedar, Caph
-    "cassiopeia": [
-        (-0.82,  0.45),
-        (-0.38,  0.72),
-        ( 0.00, -0.20),
-        ( 0.40,  0.70),
-        ( 0.80,  0.28),
-    ],
-    # Scorpius: Graffias, Dschubba, Antares, Tau Sco, Shaula, Lesath, Girtab
-    "scorpius": [
-        (-0.55,  0.82),
-        (-0.20,  0.88),
-        (-0.10,  0.50),
-        ( 0.10,  0.10),
-        ( 0.28, -0.30),
-        ( 0.55, -0.62),
-        ( 0.70, -0.85),
-    ],
+    "cassiopeia":      [(-0.90,  0.10), (-0.45,  0.75), ( 0.00,  0.15), ( 0.45,  0.75), ( 0.90,  0.10)],
+    "aries":           [(-0.60, -0.20), ( 0.10,  0.55), ( 0.75,  0.30)],
+    "triangulum":      [(-0.70, -0.40), ( 0.00,  0.75), ( 0.80, -0.25)],
+    "cepheus":         [(-0.50, -0.55), (-0.50,  0.25), ( 0.00,  0.85), ( 0.50,  0.25), ( 0.50, -0.55)],
+    "corvus":          [(-0.65, -0.50), (-0.30,  0.55), ( 0.30,  0.55), ( 0.65, -0.50)],
+    "lyra":            [( 0.00,  0.80), ( 0.65,  0.00), ( 0.00, -0.80), (-0.65,  0.00)],
+    "corona_borealis": [(-0.90,  0.00), (-0.73,  0.53), (-0.28,  0.86), ( 0.28,  0.86), ( 0.73,  0.53), ( 0.90,  0.00)],
+    "sagitta":         [(-0.80, -0.10), (-0.20,  0.15), ( 0.40,  0.05), ( 0.85,  0.30)],
+    "scutum":          [( 0.00,  0.85), ( 0.60,  0.10), ( 0.00, -0.70), (-0.40,  0.25)],
+    "norma":           [(-0.75,  0.65), (-0.75, -0.55), ( 0.75, -0.55)],
+    "circinus":        [(-0.35,  0.75), ( 0.00, -0.65), ( 0.35,  0.75)],
+    "crater":          [(-0.65,  0.65), (-0.65, -0.20), ( 0.00, -0.80), ( 0.65, -0.20), ( 0.65,  0.65)],
 }
 
 SHAPE_ZH_NAMES: dict[str, str] = {
-    "triangle":       "三角",
-    "square":         "正方",
-    "v_shape":        "V形",
-    "diamond":        "菱形",
-    "orion":          "獵戶座",
-    "big_dipper":     "北斗七星",
-    "southern_cross": "南十字座",
-    "cassiopeia":     "仙后座",
-    "scorpius":       "天蠍座",
+    "cassiopeia":      "仙后座",
+    "aries":           "牡羊座",
+    "triangulum":      "三角座",
+    "cepheus":         "仙王座",
+    "corvus":          "烏鴉座",
+    "lyra":            "天琴座",
+    "corona_borealis": "北冕座",
+    "sagitta":         "天箭座",
+    "scutum":          "盾牌座",
+    "norma":           "矩尺座",
+    "circinus":        "圓規座",
+    "crater":          "巨爵座",
 }
+
+CLOSED_SHAPES: list[str] = ["triangulum", "cepheus", "corvus", "lyra", "scutum"]
 
 THEME_MAPPING: dict[str, list[str]] = {
     "dessert_run":    ["dessert", "cafe"],
@@ -91,8 +56,8 @@ MARKER_PALETTE: list[str] = [
     "#78a8ff",
 ]
 
-KNN_K         = 5
+KNN_K         = 30
 MIN_FILTERED  = 3
-MAX_REVIEWS   = 14137   # actual max in restaurant.json; used to normalise U_reviews
-MO_WEIGHTS    = (0.25, 0.30, 0.20, 0.25)   # w_budget, w_rating, w_reviews, w_shape
-DWELL_MINUTES = 45      # estimated dwell time per restaurant stop (minutes)
+MAX_REVIEWS   = 14137
+MO_WEIGHTS    = (0.20, 0.15, 0.15, 0.50)
+DWELL_MINUTES = 45

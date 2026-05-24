@@ -14,12 +14,14 @@ class RouteRequest(BaseModel):
         description="Departure time in HH:MM (24h). If omitted, no time-window filtering.",
         examples=["19:30"],
     )
+    current_day: Optional[str] = None
+    current_time: Optional[str] = None
 
-    @field_validator("departure_time")
+    @field_validator("departure_time", "current_time")
     @classmethod
     def validate_time_format(cls, v: Optional[str]) -> Optional[str]:
         if v is not None and not re.match(r"^\d{2}:\d{2}$", v):
-            raise ValueError("departure_time must be HH:MM")
+            raise ValueError("time must be HH:MM")
         return v
 
 

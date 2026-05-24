@@ -139,6 +139,12 @@ async function generateRoute() {
   setLoadingText('🌌 演算法尋找星圖中...');
   setLoadingIcon('fa-star');
 
+  const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const now         = new Date();
+  const current_day = DAYS[now.getDay()];
+  const inputTime   = document.getElementById('departureTime').value;
+  const current_time = inputTime || `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
   try {
     const res = await fetch(API_URL, {
       method: 'POST',
@@ -149,7 +155,9 @@ async function generateRoute() {
         total_budget:         budget,
         user_lat:             position.coords.latitude,
         user_lng:             position.coords.longitude,
-        departure_time:       document.getElementById('departureTime').value || null,
+        departure_time:       inputTime || null,
+        current_day,
+        current_time,
       }),
     });
 
