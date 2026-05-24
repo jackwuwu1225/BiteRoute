@@ -116,27 +116,21 @@ def solve_template(
 
 
 def optimize_path(candidates: list[Candidate]) -> list[Candidate]:
+    # Nearest-neighbor heuristic: always move to the closest unvisited stop
     n = len(candidates)
-    if n <= 3:
+    if n <= 2:
         return candidates[:]
 
-    path = list(range(n))
+    def _dist(a: Candidate, b: Candidate) -> float:
+        return ((a.lat - b.lat) ** 2 + (a.lng - b.lng) ** 2) ** 0.5
 
-    def _d(i: int, j: int) -> float:
-        p, q = candidates[i], candidates[j]
-        return ((p.lat - q.lat) ** 2 + (p.lng - q.lng) ** 2) ** 0.5
+    unvisited = list(range(1, n))
+    path = [0]
 
-    improved = True
-    while improved:
-        improved = False
-        for i in range(n - 1):
-            for j in range(i + 2, n):
-                if i == 0 and j == n - 1:
-                    continue
-                a, b = path[i], path[i + 1]
-                c, d = path[j], path[(j + 1) % n]
-                if _d(a, c) + _d(b, d) < _d(a, b) + _d(c, d) - 1e-10:
-                    path[i + 1 : j + 1] = path[i + 1 : j + 1][::-1]
-                    improved = True
+    while unvisited:
+        last = candidates[path[-1]]
+        nearest = min(unvisited, key=lambda i: _dist(last, candidates[i]))
+        path.append(nearest)
+        unvisited.remove(nearest)
 
     return [candidates[i] for i in path]

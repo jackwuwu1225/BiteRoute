@@ -69,11 +69,6 @@ def _add_markers(m: folium.Map, chosen: list[Candidate]) -> None:
         folium.Marker(
             location=[r.lat, r.lng],
             popup=folium.Popup(popup_html, max_width=230),
-            tooltip=folium.Tooltip(
-                text=f"{r.name}　💰{int(r.price)}",
-                permanent=True,
-                sticky=False,
-            ),
             icon=folium.DivIcon(
                 html=icon_html,
                 icon_size=(30, 30),
