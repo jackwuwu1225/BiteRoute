@@ -1,3 +1,4 @@
+# all of the shape needs to be replaced.
 SHAPE_MATRICES: dict[str, list[tuple[float, float]]] = {
     "love": [
         (-0.5,  0.2), (0.0,  0.8), (0.5,  0.2), (0.0, -0.6), (-0.5,  0.2),
