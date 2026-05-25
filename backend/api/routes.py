@@ -12,12 +12,6 @@ from models.schemas import RouteRequest, RouteResponse
 router = APIRouter(prefix="/api/v1")
 
 
-def _open_points(tpoints: list[tuple[float, float]]) -> list[tuple[float, float]]:
-    if len(tpoints) > 1 and tpoints[0] == tpoints[-1]:
-        return list(tpoints[:-1])
-    return list(tpoints)
-
-
 def _is_open_today(restaurant: dict, current_day: str) -> bool:
     if not current_day:
         return True
@@ -72,12 +66,11 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
 
     for tname in shape_names:
         tpoints = SHAPE_MATRICES[tname]
-        open_pts = _open_points(tpoints)
-        if len(open_pts) > len(filtered):
+        if len(tpoints) > len(filtered):
             continue
 
         result = solve_template(
-            open_pts, filtered, tree,
+            tpoints, filtered, tree,
             req.user_lat, req.user_lng,
             lat_scale, lng_scale,
             req.total_budget,

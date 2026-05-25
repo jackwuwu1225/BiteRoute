@@ -5,13 +5,10 @@ SHAPE_MATRICES: dict[str, list[tuple[float, float]]] = {
     "triangulum":      [(-0.70, -0.40), ( 0.00,  0.75), ( 0.80, -0.25)],
     "cepheus":         [(-0.50, -0.55), (-0.50,  0.25), ( 0.00,  0.85), ( 0.50,  0.25), ( 0.50, -0.55)],
     "corvus":          [(-0.65, -0.50), (-0.30,  0.55), ( 0.30,  0.55), ( 0.65, -0.50)],
-    "lyra":            [( 0.00,  0.80), ( 0.65,  0.00), ( 0.00, -0.80), (-0.65,  0.00)],
     "corona_borealis": [(-0.90,  0.00), (-0.73,  0.53), (-0.28,  0.86), ( 0.28,  0.86), ( 0.73,  0.53), ( 0.90,  0.00)],
-    "sagitta":         [(-0.80, 0.00), (-0.20, 0.00), (0.40, 0.00), (0.80, 0.40)],
     "scutum":          [( 0.00,  0.85), ( 0.60,  0.10), ( 0.00, -0.70), (-0.40,  0.25)],
     "norma":           [(-0.75,  0.65), (-0.75, -0.55), ( 0.75, -0.55)],
     "circinus":        [(-0.35,  0.75), ( 0.00, -0.65), ( 0.35,  0.75)],
-    "crater":          [(-0.65,  0.65), (-0.65, -0.20), ( 0.00, -0.80), ( 0.65, -0.20), ( 0.65,  0.65)],
 }
 
 SHAPE_ZH_NAMES: dict[str, str] = {
@@ -20,16 +17,13 @@ SHAPE_ZH_NAMES: dict[str, str] = {
     "triangulum":      "三角座",
     "cepheus":         "仙王座",
     "corvus":          "烏鴉座",
-    "lyra":            "天琴座",
     "corona_borealis": "北冕座",
-    "sagitta":         "天箭座",
     "scutum":          "盾牌座",
     "norma":           "矩尺座",
     "circinus":        "圓規座",
-    "crater":          "巨爵座",
 }
 
-CLOSED_SHAPES: list[str] = ["triangulum", "cepheus", "corvus", "lyra", "scutum"]
+CLOSED_SHAPES: list[str] = ["triangulum", "cepheus", "corvus", "scutum"]
 
 THEME_MAPPING: dict[str, list[str]] = {
     "dessert_run":    ["dessert", "cafe"],
