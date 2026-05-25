@@ -9,6 +9,8 @@ SHAPE_MATRICES: dict[str, list[tuple[float, float]]] = {
     "scutum":          [( 0.00,  0.85), ( 0.60,  0.10), ( 0.00, -0.70), (-0.40,  0.25)],
     "norma":           [(-0.75,  0.65), (-0.75, -0.55), ( 0.75, -0.55)],
     "circinus":        [(-0.35,  0.75), ( 0.00, -0.65), ( 0.35,  0.75)],
+    "libra":           [(-0.80, -1.00), (-0.20,  0.20), ( 0.50,  1.00), ( 0.90,  0.00), ( 0.20, -0.80)],
+    "big_dipper":      [(-1.00,  0.35), (-0.55,  0.25), (-0.20,  0.00), ( 0.10, -0.30), ( 0.10, -0.80), ( 0.55, -0.95), ( 0.90, -0.50)],
 }
 
 SHAPE_ZH_NAMES: dict[str, str] = {
@@ -21,6 +23,8 @@ SHAPE_ZH_NAMES: dict[str, str] = {
     "scutum":          "盾牌座",
     "norma":           "矩尺座",
     "circinus":        "圓規座",
+    "libra":           "天秤座",
+    "big_dipper":      "北斗七星",
 }
 
 CLOSED_SHAPES: list[str] = ["triangulum", "cepheus", "corvus", "scutum"]

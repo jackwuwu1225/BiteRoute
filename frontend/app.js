@@ -10,6 +10,8 @@ const SHAPE_ZH = {
   scutum:          '盾牌座',
   norma:           '矩尺座',
   circinus:        '圓規座',
+  libra:           '天秤座',
+  big_dipper:      '北斗七星',
 };
 
 const CONSTELLATION_COORDS = {
@@ -22,6 +24,8 @@ const CONSTELLATION_COORDS = {
   scutum:          [[0.00, 0.85], [0.60, 0.10], [0.00, -0.70], [-0.40, 0.25]],
   norma:           [[-0.75, 0.65], [-0.75, -0.55], [0.75, -0.55]],
   circinus:        [[-0.35, 0.75], [0.00, -0.65], [0.35, 0.75]],
+  libra:           [[-0.80, -1.00], [-0.20, 0.20], [0.50, 1.00], [0.90, 0.00], [0.20, -0.80]],
+  big_dipper:      [[-1.00, 0.35], [-0.55, 0.25], [-0.20, 0.00], [0.10, -0.30], [0.10, -0.80], [0.55, -0.95], [0.90, -0.50]],
 };
 
 const CLOSED_SHAPES_JS = new Set(['triangulum', 'cepheus', 'corvus', 'scutum']);
@@ -280,12 +284,11 @@ function buildStatsOverlay(displayName, price) {
       <div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:5px;">解鎖星座</div>
       <div style="color:#fff;font-size:26px;font-weight:700;letter-spacing:-.01em;line-height:1.15;
                   margin-bottom:14px;text-shadow:0 0 28px rgba(0,229,255,0.35);">${displayName}</div>
-      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,255,0.07);
-                  border:1px solid rgba(0,229,255,0.2);border-radius:10px;padding:7px 20px;margin-bottom:16px;">
-        <span style="color:rgba(255,255,255,0.38);font-size:11px;letter-spacing:.12em;">TOTAL</span>
-        <span style="color:#00e5ff;font-size:22px;font-weight:700;text-shadow:0 0 14px rgba(0,229,255,0.65);">
-          $ ${(+price).toLocaleString()}
-        </span>
+      <div style="display:flex;justify-content:center;align-items:baseline;gap:8px;
+                  background:rgba(0,229,255,0.07);border:1px solid rgba(0,229,255,0.2);
+                  border-radius:10px;padding:7px 20px;margin:0 auto 16px auto;width:fit-content;">
+        <span style="color:rgba(255,255,255,0.38);font-size:11px;letter-spacing:.12em;line-height:1;">TOTAL</span>
+        <span style="color:#00e5ff;font-size:22px;font-weight:700;line-height:1;text-shadow:0 0 14px rgba(0,229,255,0.65);">$ ${(+price).toLocaleString()}</span>
       </div>
       <div style="color:rgba(255,255,255,0.14);font-size:9px;letter-spacing:.2em;">biteroute.app</div>
     </div>
