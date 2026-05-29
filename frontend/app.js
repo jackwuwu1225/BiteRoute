@@ -1,30 +1,44 @@
-// API endpoint for route generation
 const API_URL = 'http://127.0.0.1:8000/api/v1/generate_route';
 
-// Shape Chinese display names (mirrors backend SHAPE_ZH_NAMES)
 const SHAPE_ZH = {
-  triangle:       '三角',
-  square:         '正方',
-  v_shape:        'V形',
-  diamond:        '菱形',
-  orion:          '獵戶座',
-  big_dipper:     '北斗七星',
-  southern_cross: '南十字座',
-  cassiopeia:     '仙后座',
-  scorpius:       '天蠍座',
+  cassiopeia:      '仙后座',
+  aries:           '牡羊座',
+  triangulum:      '三角座',
+  cepheus:         '仙王座',
+  corvus:          '烏鴉座',
+  corona_borealis: '北冕座',
+  scutum:          '盾牌座',
+  norma:           '矩尺座',
+  circinus:        '圓規座',
+  libra:           '天秤座',
+  big_dipper:      '北斗七星',
 };
+
+const CONSTELLATION_COORDS = {
+  cassiopeia:      [[-0.90, 0.10], [-0.45, 0.75], [0.00, 0.15], [0.45, 0.75], [0.90, 0.10]],
+  aries:           [[-0.80, 0.80], [0.00, 0.20], [0.60, -0.50], [0.80, -0.80]],
+  triangulum:      [[-0.70, -0.40], [0.00, 0.75], [0.80, -0.25]],
+  cepheus:         [[-0.50, -0.55], [-0.50, 0.25], [0.00, 0.85], [0.50, 0.25], [0.50, -0.55]],
+  corvus:          [[-0.65, -0.50], [-0.30, 0.55], [0.30, 0.55], [0.65, -0.50]],
+  corona_borealis: [[-0.90, 0.00], [-0.73, 0.53], [-0.28, 0.86], [0.28, 0.86], [0.73, 0.53], [0.90, 0.00]],
+  scutum:          [[0.00, 0.85], [0.60, 0.10], [0.00, -0.70], [-0.40, 0.25]],
+  norma:           [[-0.75, 0.65], [-0.75, -0.55], [0.75, -0.55]],
+  circinus:        [[-0.35, 0.75], [0.00, -0.65], [0.35, 0.75]],
+  libra:           [[-0.80, -1.00], [-0.20, 0.20], [0.50, 1.00], [0.90, 0.00], [0.20, -0.80]],
+  big_dipper:      [[-1.00, 0.35], [-0.55, 0.25], [-0.20, 0.00], [0.10, -0.30], [0.10, -0.80], [0.55, -0.95], [0.90, -0.50]],
+};
+
+const CLOSED_SHAPES_JS = new Set(['triangulum', 'cepheus', 'corvus', 'scutum']);
 
 let selectedTheme = 'dessert_run';
 let routeData     = null;
 
-// Update slider fill gradient based on current value
 function sliderBg(slider, color) {
   const pct = ((+slider.value - +slider.min) / (+slider.max - +slider.min)) * 100;
   slider.style.background =
     `linear-gradient(to right,${color} ${pct}%,rgba(255,255,255,0.13) ${pct}%)`;
 }
 
-// Show one of the three app panels, hide the others
 function showState(state) {
   const panels = { input: 'inputPanel', loading: 'loadingPanel', result: 'resultPanel' };
   Object.entries(panels).forEach(([key, id]) => {
@@ -40,7 +54,6 @@ function setLoadingIcon(iconClass) {
   document.getElementById('loadingIcon').className = `fa-solid ${iconClass} text-cyan-400 text-2xl`;
 }
 
-// Slide-in toast notification (auto-dismisses after 3.4 s)
 function showToast(msg, type = 'info') {
   const container = document.getElementById('toastContainer');
   const el = document.createElement('div');
@@ -66,7 +79,6 @@ function showToast(msg, type = 'info') {
   }, 3400);
 }
 
-// Humorous budget gate — blocks clearly impossible budgets
 function validateBudget(budget) {
   if (budget < 150) {
     showToast("這點錢只能畫一個『點』喔！去巷口買御飯糰吧 🍙", 'error');
@@ -82,7 +94,6 @@ function validateBudget(budget) {
   return true;
 }
 
-// Wrap Geolocation API in a Promise
 function getPosition() {
   return new Promise((resolve, reject) => {
     if (!navigator.geolocation) {
@@ -104,7 +115,6 @@ function geoErrorMsg(err) {
   return msgs[err.code] || ('定位失敗：' + err.message);
 }
 
-// Load Folium HTML via Blob URL to avoid cross-origin issues
 function injectMap(mapHtml) {
   const container = document.getElementById('mapContainer');
   container.innerHTML = '';
@@ -140,9 +150,9 @@ async function generateRoute() {
   setLoadingIcon('fa-star');
 
   const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  const now         = new Date();
-  const current_day = DAYS[now.getDay()];
-  const inputTime   = document.getElementById('departureTime').value;
+  const now          = new Date();
+  const current_day  = DAYS[now.getDay()];
+  const inputTime    = document.getElementById('departureTime').value;
   const current_time = inputTime || `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
 
   try {
@@ -176,7 +186,6 @@ async function generateRoute() {
       return;
     }
 
-    // Backend already provides the Chinese name; local map is a fallback
     const displayName = data.matched_shape_name
       || SHAPE_ZH[data.constellation_matched]
       || data.constellation_matched;
@@ -199,39 +208,94 @@ function resetApp() {
   showState('input');
 }
 
-// Build a dark gradient overlay div for IG export card
+function buildConstellationSVG(shapeKey) {
+  const W = 260, H = 200, pad = 22;
+  const dw = W - 2 * pad, dh = H - 2 * pad;
+  const pts = CONSTELLATION_COORDS[shapeKey];
+
+  if (!pts) {
+    return `<svg width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="#020210"/></svg>`;
+  }
+
+  const toSVG = ([nx, ny]) => [
+    pad + (nx + 1) / 2 * dw,
+    pad + (1 - (ny + 1) / 2) * dh,
+  ];
+
+  const svgPts  = pts.map(toSVG);
+  const drawPts = CLOSED_SHAPES_JS.has(shapeKey) ? [...svgPts, svgPts[0]] : svgPts;
+  const polyStr = drawPts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
+
+  const rng   = (lo, hi) => Math.random() * (hi - lo) + lo;
+  const stars = Array.from({ length: 55 }, () => {
+    const x = rng(0, W), y = rng(0, H);
+    const r = rng(0.3, 1.3), op = rng(0.08, 0.55);
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="white" opacity="${op.toFixed(2)}"/>`;
+  }).join('');
+
+  const nodeDots = svgPts.map(([x, y]) => `
+    <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="10" fill="#00e5ff" opacity="0.06"/>
+    <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5.5" fill="#00e5ff" opacity="0.16"/>
+    <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.8" fill="#00e5ff"/>
+    <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="1.1" fill="white" opacity="0.92"/>
+  `).join('');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="display:block;">
+    <defs>
+      <radialGradient id="cBg" cx="50%" cy="50%" r="65%">
+        <stop offset="0%"   stop-color="#061540"/>
+        <stop offset="100%" stop-color="#020210"/>
+      </radialGradient>
+    </defs>
+    <rect width="${W}" height="${H}" fill="url(#cBg)"/>
+    ${stars}
+    <polyline points="${polyStr}" fill="none" stroke="#00e5ff" stroke-width="3.5"
+      stroke-linecap="round" stroke-linejoin="round" opacity="0.10"/>
+    <polyline points="${polyStr}" fill="none" stroke="#00e5ff" stroke-width="1.1"
+      stroke-linecap="round" stroke-linejoin="round" opacity="0.82"/>
+    ${nodeDots}
+  </svg>`;
+}
+
 function buildStatsOverlay(displayName, price) {
+  const shapeKey   = routeData?.constellation_matched;
+  const svgMarkup  = buildConstellationSVG(shapeKey);
+
   const el = document.createElement('div');
   el.id = 'statsOverlay';
   el.style.cssText = `
     position:absolute;inset:0;z-index:9999;
-    display:flex;flex-direction:column;justify-content:flex-end;
-    background:linear-gradient(to bottom,rgba(5,5,15,0.15) 0%,rgba(5,5,15,0.9) 60%,rgba(5,5,15,0.97) 100%);
-    padding:0 28px 36px;font-family:'Space Grotesk',sans-serif;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:radial-gradient(ellipse at 50% 38%,rgba(6,18,54,0.95) 0%,rgba(2,2,14,0.97) 68%);
+    padding:24px 28px;font-family:'Space Grotesk',sans-serif;box-sizing:border-box;
   `;
+
   el.innerHTML = `
-    <div style="text-align:center;">
-      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;">
-        <div style="flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(0,229,255,0.55));"></div>
-        <span style="color:rgba(0,229,255,0.65);font-size:11px;letter-spacing:.2em;text-transform:uppercase;">BiteRoute</span>
-        <div style="flex:1;height:1px;background:linear-gradient(to left,transparent,rgba(0,229,255,0.55));"></div>
+    <div style="width:100%;max-width:320px;display:flex;flex-direction:column;align-items:center;">
+      <div style="display:flex;align-items:center;gap:8px;width:100%;margin-bottom:14px;">
+        <div style="flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(0,229,255,0.5));"></div>
+        <span style="color:rgba(0,229,255,0.65);font-size:10px;letter-spacing:.28em;text-transform:uppercase;">BiteRoute</span>
+        <div style="flex:1;height:1px;background:linear-gradient(to left,transparent,rgba(0,229,255,0.5));"></div>
       </div>
-      <div style="color:rgba(255,255,255,0.4);font-size:12px;letter-spacing:.15em;margin-bottom:6px;">解鎖星座</div>
-      <div style="color:#fff;font-size:32px;font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:22px;">${displayName}</div>
-      <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(0,229,255,0.1);
-                  border:1px solid rgba(0,229,255,0.25);border-radius:12px;padding:10px 24px;margin-bottom:24px;">
-        <span style="color:rgba(255,255,255,0.45);font-size:12px;letter-spacing:.1em;">TOTAL</span>
-        <span style="color:#00e5ff;font-size:26px;font-weight:700;text-shadow:0 0 18px rgba(0,229,255,0.8);">
-          $ ${(+price).toLocaleString()}
-        </span>
+      <div style="border:1px solid rgba(0,229,255,0.18);border-radius:14px;overflow:hidden;
+                  margin-bottom:14px;box-shadow:0 0 40px rgba(0,229,255,0.10),inset 0 0 20px rgba(0,229,255,0.04);">
+        ${svgMarkup}
       </div>
-      <div style="color:rgba(255,255,255,0.18);font-size:10px;letter-spacing:.18em;">biteroute.app</div>
+      <div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:5px;">解鎖星座</div>
+      <div style="color:#fff;font-size:26px;font-weight:700;letter-spacing:-.01em;line-height:1.15;
+                  margin-bottom:14px;text-shadow:0 0 28px rgba(0,229,255,0.35);">${displayName}</div>
+      <div style="display:flex;justify-content:center;align-items:baseline;gap:8px;
+                  background:rgba(0,229,255,0.07);border:1px solid rgba(0,229,255,0.2);
+                  border-radius:10px;padding:7px 20px;margin:0 auto 16px auto;width:fit-content;">
+        <span style="color:rgba(255,255,255,0.38);font-size:11px;letter-spacing:.12em;line-height:1;">TOTAL</span>
+        <span style="color:#00e5ff;font-size:22px;font-weight:700;line-height:1;text-shadow:0 0 14px rgba(0,229,255,0.65);">$ ${(+price).toLocaleString()}</span>
+      </div>
+      <div style="color:rgba(255,255,255,0.14);font-size:9px;letter-spacing:.2em;">biteroute.app</div>
     </div>
   `;
   return el;
 }
 
-// Center-crop canvas to strict 4:5 aspect ratio
 function cropTo45(src) {
   const ratio = 4 / 5;
   const srcR  = src.width / src.height;
@@ -245,7 +309,6 @@ function cropTo45(src) {
   return out;
 }
 
-// Apply per-pixel random noise for film grain effect
 function applyFilmGrain(canvas, intensity) {
   const ctx  = canvas.getContext('2d');
   const data = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -271,11 +334,9 @@ async function shareToIG() {
   mapContainer.style.position = 'relative';
   mapContainer.appendChild(overlay);
 
-  // Short delay so overlay renders before capture
   await new Promise(r => setTimeout(r, 320));
 
   try {
-    // html2canvas skips iframes (Folium tiles); overlay provides the visual content
     const canvas = await html2canvas(mapContainer, {
       allowTaint:             true,
       useCORS:                true,
@@ -302,12 +363,10 @@ async function shareToIG() {
   }
 }
 
-// Wire up all UI interactions after DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   const budgetSlider = document.getElementById('budgetSlider');
   const radiusSlider = document.getElementById('radiusSlider');
 
-  // Initialize slider fill gradients on first paint
   sliderBg(budgetSlider, '#00e5ff');
   sliderBg(radiusSlider, '#ff006e');
 
@@ -323,7 +382,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('bikeWarning').style.display = val > 1500 ? 'flex' : 'none';
   });
 
-  // Theme selection — highlight active button
   document.querySelectorAll('.theme-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));

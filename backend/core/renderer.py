@@ -47,14 +47,19 @@ def _add_markers(m: folium.Map, chosen: list[Candidate]) -> None:
     for idx, r in enumerate(chosen):
         color = MARKER_PALETTE[idx % len(MARKER_PALETTE)]
         stars = "★" * round(r.rating) + "☆" * (5 - round(r.rating))
+        maps_url = f"https://www.google.com/maps/search/?api=1&query={r.lat},{r.lng}"
 
         popup_html = (
-            "<div style='font-family:system-ui,sans-serif;min-width:160px;padding:6px;'>"
-            f"<b style='font-size:13px;'>{r.name}</b><br>"
-            f"<span style='color:#888;font-size:11px;'>站點 #{idx + 1}</span><br>"
-            f"<span style='color:#facc15;'>{stars}</span> "
-            f"<span style='color:#888;font-size:11px;'>{r.rating}</span><br>"
-            f"<span style='color:#00e5ff;'>&#36; {int(r.price)}</span>"
+            "<div style='font-family:system-ui,sans-serif;min-width:190px;padding:8px 10px;'>"
+            f"<b style='font-size:14px;display:block;margin-bottom:5px;'>{r.name}</b>"
+            "<div style='margin-bottom:8px;'>"
+            f"<span style='color:#facc15;font-size:13px;'>{stars}</span>"
+            f"<span style='color:#888;font-size:12px;margin-left:5px;'>{r.rating}</span>"
+            "</div>"
+            f"<a href='{maps_url}' target='_blank' rel='noopener' "
+            "style='display:inline-block;padding:5px 12px;"
+            "background:#00e5ff;color:#05050f;font-size:11px;font-weight:600;"
+            "border-radius:6px;text-decoration:none;'>Open in Google Maps</a>"
             "</div>"
         )
 
@@ -66,7 +71,7 @@ def _add_markers(m: folium.Map, chosen: list[Candidate]) -> None:
             fill=True,
             fill_color=color,
             fill_opacity=0.9,
-            popup=folium.Popup(popup_html, max_width=230),
+            popup=folium.Popup(popup_html, max_width=240),
             tooltip=f"#{idx + 1} {r.name}",
         ).add_to(m)
 
