@@ -24,7 +24,7 @@ def build_map(chosen: list[Candidate], shape_name: str) -> str:
     _add_markers(m, chosen)
     _add_glow_polyline(m, chosen, shape_name)
 
-    return m._repr_html_()
+    return m.get_root().render()
 
 
 def _inject_overlay(m: folium.Map, zh_name: str) -> None:

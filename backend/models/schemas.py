@@ -25,9 +25,16 @@ class RouteRequest(BaseModel):
         return v
 
 
+class Assignment(BaseModel):
+    name: str
+    lat: float
+    lng: float
+
+
 class RouteResponse(BaseModel):
     status: str
     constellation_matched: Optional[str]
     matched_shape_name: Optional[str]
     total_price: float
     map_html: str
+    assignments: list[Assignment] = []
