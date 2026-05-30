@@ -402,11 +402,11 @@ async function shareToIG() {
         const style = clonedDoc.createElement('style');
         style.innerHTML = `
           #statsOverlay span {
-            transform: translateY(-2px) !important;
+            transform: translateY(-10px) !important;
             display: inline-block !important;
           }
           #statsOverlay div[style*="font-size"] {
-            transform: translateY(-1px) !important;
+            transform: translateY(-10px) !important;
           }
         `;
         clonedDoc.head.appendChild(style);
