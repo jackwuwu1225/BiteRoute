@@ -1,4 +1,7 @@
+// 本機測試
 const API_URL = 'http://127.0.0.1:8000/api/v1/generate_route';
+// 內網測試(填入你電腦的IPv4地址)
+//const API_URL = 'http://192.168.0.0:8000/api/v1/generate_route';
 
 const SHAPE_ZH = {
   cassiopeia:      '仙后座',
@@ -30,8 +33,17 @@ const CONSTELLATION_COORDS = {
 
 const CLOSED_SHAPES_JS = new Set(['triangulum', 'cepheus', 'corvus', 'scutum']);
 
-let selectedTheme = 'dessert_run';
-let routeData     = null;
+const FALLBACK_COORDS = { coords: { latitude: 22.9997, longitude: 120.2185 } };
+
+const LOADING_MESSAGES = [
+  '正在過濾高分餐廳...',
+  '正在計算天文座標...',
+  '正在為您連線星圖...',
+];
+
+let selectedTheme  = 'dessert_run';
+let routeData      = null;
+let _loadingTimer  = null;
 
 function sliderBg(slider, color) {
   const pct = ((+slider.value - +slider.min) / (+slider.max - +slider.min)) * 100;
@@ -95,24 +107,32 @@ function validateBudget(budget) {
 }
 
 function getPosition() {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     if (!navigator.geolocation) {
-      reject(new Error('瀏覽器不支援定位功能'));
+      showToast('GPS 訊號微弱，使用預設位置（成大光復校區）...', 'info');
+      resolve(FALLBACK_COORDS);
       return;
     }
-    navigator.geolocation.getCurrentPosition(resolve, reject, {
-      timeout: 12000, maximumAge: 60000, enableHighAccuracy: true,
-    });
+    navigator.geolocation.getCurrentPosition(resolve, () => {
+      showToast('GPS 訊號微弱，使用預設位置（成大光復校區）...', 'info');
+      resolve(FALLBACK_COORDS);
+    }, { timeout: 5000, maximumAge: 60000, enableHighAccuracy: true });
   });
 }
 
-function geoErrorMsg(err) {
-  const msgs = {
-    1: '定位權限被拒絕，請在瀏覽器設定中允許位置存取',
-    2: '無法取得位置，請確認 GPS 已開啟',
-    3: '定位請求超時，請稍後再試',
-  };
-  return msgs[err.code] || ('定位失敗：' + err.message);
+function startLoadingCycle() {
+  let idx = 0;
+  setLoadingText(LOADING_MESSAGES[idx]);
+  setLoadingIcon('fa-star');
+  _loadingTimer = setInterval(() => {
+    idx = (idx + 1) % LOADING_MESSAGES.length;
+    setLoadingText(LOADING_MESSAGES[idx]);
+  }, 1500);
+}
+
+function stopLoadingCycle() {
+  clearInterval(_loadingTimer);
+  _loadingTimer = null;
 }
 
 function injectMap(mapHtml) {
@@ -122,7 +142,7 @@ function injectMap(mapHtml) {
   const url   = URL.createObjectURL(blob);
   const frame = document.createElement('iframe');
   frame.src = url;
-  frame.style.cssText = 'width:100%;height:100%;border:none;display:block;';
+  frame.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
   frame.onload = () => URL.revokeObjectURL(url);
   container.appendChild(frame);
 }
@@ -137,17 +157,9 @@ async function generateRoute() {
   setLoadingText('📍 正在獲取定位...');
   setLoadingIcon('fa-location-crosshairs');
 
-  let position;
-  try {
-    position = await getPosition();
-  } catch (err) {
-    showToast(geoErrorMsg(err), 'error');
-    showState('input');
-    return;
-  }
+  const position = await getPosition();
 
-  setLoadingText('🌌 演算法尋找星圖中...');
-  setLoadingIcon('fa-star');
+  startLoadingCycle();
 
   const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const now          = new Date();
@@ -199,6 +211,53 @@ async function generateRoute() {
   } catch (err) {
     showToast('連線失敗：請確認後端伺服器已啟動 (port 8000)', 'error');
     showState('input');
+  } finally {
+    stopLoadingCycle();
+  }
+}
+
+function openMapsNavigation() {
+  const stops = routeData?.assignments;
+  if (!stops?.length) return;
+  const origin      = `${stops[0].lat},${stops[0].lng}`;
+  const destination = `${stops[stops.length - 1].lat},${stops[stops.length - 1].lng}`;
+  const mid         = stops.slice(1, -1).map(s => `${s.lat},${s.lng}`).join('|');
+  let url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`;
+  if (mid) url += `&waypoints=${encodeURIComponent(mid)}`;
+  window.open(url, '_blank');
+}
+
+async function shareRoute() {
+  if (!routeData) return;
+  const name      = routeData.matched_shape_name || SHAPE_ZH[routeData.constellation_matched] || routeData.constellation_matched;
+  const stops     = routeData.assignments?.map(a => a.name).join(' → ') || '';
+  const text      = `我剛用 BiteRoute 生成了「${name}」路線！${stops ? `路線：${stops}` : ''}`;
+  const shareData = { title: 'My BiteRoute Star Map!', text, url: window.location.href };
+
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (isTouchDevice && navigator.share && navigator.canShare?.(shareData)) {
+    try {
+      await navigator.share(shareData);
+      return;
+    } catch (e) {
+      if (e.name === 'AbortError') return;
+    }
+  }
+
+  const copyText = `${shareData.text}\n${shareData.url}`;
+  try {
+    await navigator.clipboard.writeText(copyText);
+    showToast('路線連結已複製到剪貼簿！', 'success');
+  } catch {
+    const ta = document.createElement('textarea');
+    ta.value = copyText;
+    ta.style.cssText = 'position:fixed;left:-9999px;top:-9999px;opacity:0;';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    const ok = document.execCommand('copy');
+    ta.remove();
+    showToast(ok ? '路線連結已複製到剪貼簿！' : '分享失敗，請手動複製連結', ok ? 'success' : 'error');
   }
 }
 
@@ -284,11 +343,18 @@ function buildStatsOverlay(displayName, price) {
       <div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:5px;">解鎖星座</div>
       <div style="color:#fff;font-size:26px;font-weight:700;letter-spacing:-.01em;line-height:1.15;
                   margin-bottom:14px;text-shadow:0 0 28px rgba(0,229,255,0.35);">${displayName}</div>
-      <div style="display:flex;justify-content:center;align-items:baseline;gap:8px;
+      <div style="display:block;text-align:center;
                   background:rgba(0,229,255,0.07);border:1px solid rgba(0,229,255,0.2);
-                  border-radius:10px;padding:7px 20px;margin:0 auto 16px auto;width:fit-content;">
-        <span style="color:rgba(255,255,255,0.38);font-size:11px;letter-spacing:.12em;line-height:1;">TOTAL</span>
-        <span style="color:#00e5ff;font-size:22px;font-weight:700;line-height:1;text-shadow:0 0 14px rgba(0,229,255,0.65);">$ ${(+price).toLocaleString()}</span>
+                  border-radius:10px;padding:12px 24px;margin:0 auto 16px auto;
+                  min-width:160px;box-sizing:border-box;white-space:nowrap;">
+        <span style="color:rgba(255,255,255,0.38);font-size:11px;letter-spacing:.12em;
+                     display:inline-block;vertical-align:middle;line-height:1;
+                     white-space:nowrap;margin-right:8px;
+                     position:relative;top:-4px;">TOTAL</span>
+        <span style="color:#00e5ff;font-size:22px;font-weight:700;
+                     display:inline-block;vertical-align:middle;line-height:1;
+                     white-space:nowrap;position:relative;top:-4px;
+                     text-shadow:0 0 14px rgba(0,229,255,0.65);">$ ${(+price).toLocaleString()}</span>
       </div>
       <div style="color:rgba(255,255,255,0.14);font-size:9px;letter-spacing:.2em;">biteroute.app</div>
     </div>
@@ -345,6 +411,19 @@ async function shareToIG() {
       logging:                false,
       foreignObjectRendering: false,
       ignoreElements:         el => el.tagName === 'IFRAME',
+      onclone: (clonedDoc) => {
+        const style = clonedDoc.createElement('style');
+        style.innerHTML = `
+          #statsOverlay span {
+            transform: translateY(-4px) !important;
+            display: inline-block !important;
+          }
+          #statsOverlay div[style*="font-size"] {
+            transform: translateY(-4px) !important;
+          }
+        `;
+        clonedDoc.head.appendChild(style);
+      },
     });
 
     const cropped = cropTo45(canvas);
@@ -391,6 +470,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btnGenerate').addEventListener('click', generateRoute);
+  document.getElementById('btnNavigate').addEventListener('click', openMapsNavigation);
+  document.getElementById('btnShareRoute').addEventListener('click', shareRoute);
   document.getElementById('btnShare').addEventListener('click', shareToIG);
   document.getElementById('btnReset').addEventListener('click', resetApp);
 });

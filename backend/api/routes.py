@@ -7,7 +7,7 @@ from core.constants import SHAPE_MATRICES, SHAPE_ZH_NAMES, THEME_MAPPING, MIN_FI
 from core.geo import haversine_m, lat_lng_scales
 from core.optimizer import build_kdtree, solve_template, optimize_path, TemplateResult
 from core.renderer import build_map
-from models.schemas import RouteRequest, RouteResponse
+from models.schemas import RouteRequest, RouteResponse, Assignment
 
 router = APIRouter(prefix="/api/v1")
 
@@ -101,4 +101,5 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
         matched_shape_name=SHAPE_ZH_NAMES.get(best_name, best_name),
         total_price=total_price,
         map_html=map_html,
+        assignments=[Assignment(name=c.name, lat=c.lat, lng=c.lng) for c in ordered],
     )
