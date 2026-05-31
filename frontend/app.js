@@ -1,4 +1,7 @@
-const API_URL = 'http://127.0.0.1:8000/api/v1/generate_route';
+// 本機測試
+//const API_URL = 'http://127.0.0.1:8000/api/v1/generate_route';
+// 內網測試
+const API_URL = 'http://192.168.20.59:8000/api/v1/generate_route';
 
 const SHAPE_ZH = {
   cassiopeia:      '仙后座',
@@ -240,11 +243,20 @@ async function shareRoute() {
     }
   }
 
+  const copyText = `${shareData.text}\n${shareData.url}`;
   try {
-    await navigator.clipboard.writeText(`${text} ${window.location.href}`);
-    showToast('路線已複製到剪貼簿！', 'success');
+    await navigator.clipboard.writeText(copyText);
+    showToast('路線連結已複製到剪貼簿！', 'success');
   } catch {
-    showToast('分享失敗，請手動複製連結', 'error');
+    const ta = document.createElement('textarea');
+    ta.value = copyText;
+    ta.style.cssText = 'position:fixed;left:-9999px;top:-9999px;opacity:0;';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    const ok = document.execCommand('copy');
+    ta.remove();
+    showToast(ok ? '路線連結已複製到剪貼簿！' : '分享失敗，請手動複製連結', ok ? 'success' : 'error');
   }
 }
 
