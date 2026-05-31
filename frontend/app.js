@@ -1,7 +1,7 @@
 // 本機測試
-//const API_URL = 'http://127.0.0.1:8000/api/v1/generate_route';
-// 內網測試
-const API_URL = 'http://192.168.20.59:8000/api/v1/generate_route';
+const API_URL = 'http://127.0.0.1:8000/api/v1/generate_route';
+// 內網測試(填入你電腦的IPv4地址)
+//const API_URL = 'http://192.168.0.0:8000/api/v1/generate_route';
 
 const SHAPE_ZH = {
   cassiopeia:      '仙后座',
@@ -234,7 +234,8 @@ async function shareRoute() {
   const text      = `我剛用 BiteRoute 生成了「${name}」路線！${stops ? `路線：${stops}` : ''}`;
   const shareData = { title: 'My BiteRoute Star Map!', text, url: window.location.href };
 
-  if (navigator.share && navigator.canShare?.(shareData)) {
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (isTouchDevice && navigator.share && navigator.canShare?.(shareData)) {
     try {
       await navigator.share(shareData);
       return;
@@ -414,11 +415,11 @@ async function shareToIG() {
         const style = clonedDoc.createElement('style');
         style.innerHTML = `
           #statsOverlay span {
-            transform: translateY(-10px) !important;
+            transform: translateY(-4px) !important;
             display: inline-block !important;
           }
           #statsOverlay div[style*="font-size"] {
-            transform: translateY(-10px) !important;
+            transform: translateY(-4px) !important;
           }
         `;
         clonedDoc.head.appendChild(style);
