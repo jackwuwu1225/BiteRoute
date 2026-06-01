@@ -2,11 +2,27 @@
 import folium
 from branca.element import Element as BrancaElement
 
-from core.constants import CLOSED_SHAPES, GLOW_LAYERS, MARKER_PALETTE, NEON_CYAN, SHAPE_ZH_NAMES
+from core.constants import (
+    CLOSED_SHAPES,
+    GLOW_LAYERS,
+    MARKER_PALETTE,
+    NEON_CYAN,
+    SHAPE_ZH_NAMES,
+    YOUBIKE_COLOR_FEW,
+    YOUBIKE_COLOR_MANY,
+    YOUBIKE_COLOR_NONE,
+    YOUBIKE_THRESHOLD_FEW,
+    YOUBIKE_THRESHOLD_MANY,
+)
 from core.optimizer import Candidate
+from core.youbike import RelayStar
 
 
-def build_map(chosen: list[Candidate], shape_name: str) -> str:
+def build_map(
+    chosen: list[Candidate],
+    shape_name: str,
+    relay_stars: list[RelayStar] | None = None,
+) -> str:
     center_lat = sum(c.lat for c in chosen) / len(chosen)
     center_lng = sum(c.lng for c in chosen) / len(chosen)
 
@@ -21,6 +37,9 @@ def build_map(chosen: list[Candidate], shape_name: str) -> str:
 
     zh_name = SHAPE_ZH_NAMES.get(shape_name, shape_name)
     _inject_overlay(m, zh_name)
+    # 接駁星畫在主星之下，避免遮住星座主視覺
+    if relay_stars:
+        _add_relay_stars(m, relay_stars)
     _add_markers(m, chosen)
     _add_glow_polyline(m, chosen, shape_name)
 
@@ -86,4 +105,57 @@ def _add_glow_polyline(m: folium.Map, chosen: list[Candidate], shape_name: str) 
             color=NEON_CYAN,
             weight=weight,
             opacity=opacity,
+        ).add_to(m)
+
+
+def _relay_style(star: RelayStar) -> tuple[str, float]:
+    """依可借車數決定接駁星的顏色與亮度（fill_opacity）。"""
+    if not star.in_service or star.bikes <= 0:
+        return YOUBIKE_COLOR_NONE, 0.40
+    if star.bikes >= YOUBIKE_THRESHOLD_MANY:
+        return YOUBIKE_COLOR_MANY, 0.95
+    if star.bikes >= YOUBIKE_THRESHOLD_FEW:
+        return YOUBIKE_COLOR_FEW, 0.70
+    return YOUBIKE_COLOR_NONE, 0.40
+
+
+def _add_relay_stars(m: folium.Map, relay_stars: list[RelayStar]) -> None:
+    """把 YouBike 站點畫成依附在主星旁、較暗淡的小「接駁星」。"""
+    for star in relay_stars:
+        color, opacity = _relay_style(star)
+        status_txt = "營運中" if star.in_service else "停駛"
+
+        popup_html = (
+            "<div style='font-family:system-ui,sans-serif;min-width:170px;padding:8px 10px;'>"
+            f"<b style='font-size:13px;display:block;margin-bottom:4px;'>🚲 {star.name}</b>"
+            "<div style='font-size:12px;line-height:1.6;'>"
+            f"可借車輛：<b style='color:{color};'>{star.bikes}</b> 台<br>"
+            f"可還空位：<b>{star.docks}</b> 位<br>"
+            f"狀態：{status_txt}"
+            "</div>"
+            f"<div style='font-size:10px;color:#888;margin-top:5px;'>資料時間 {star.update_time}</div>"
+            "</div>"
+        )
+
+        # 外層淡光暈，營造星點質感
+        folium.CircleMarker(
+            location=[star.lat, star.lng],
+            radius=9,
+            color=color,
+            weight=0,
+            fill=True,
+            fill_color=color,
+            fill_opacity=opacity * 0.25,
+        ).add_to(m)
+        # 內層實心小點
+        folium.CircleMarker(
+            location=[star.lat, star.lng],
+            radius=4,
+            color="rgba(255,255,255,0.6)",
+            weight=1,
+            fill=True,
+            fill_color=color,
+            fill_opacity=opacity,
+            popup=folium.Popup(popup_html, max_width=220),
+            tooltip=f"🚲 {star.name}（可借 {star.bikes}）",
         ).add_to(m)

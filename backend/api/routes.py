@@ -7,6 +7,7 @@ from core.constants import SHAPE_MATRICES, SHAPE_ZH_NAMES, THEME_MAPPING, MIN_FI
 from core.geo import haversine_m, lat_lng_scales
 from core.optimizer import build_kdtree, solve_template, optimize_path, TemplateResult
 from core.renderer import build_map
+from core.youbike import get_relay_stars
 from models.schemas import RouteRequest, RouteResponse, Assignment
 
 router = APIRouter(prefix="/api/v1")
@@ -93,7 +94,14 @@ def generate_route(req: RouteRequest, request: Request) -> RouteResponse:
 
     ordered = optimize_path(best.assignments)
     total_price = round(sum(c.price for c in ordered), 2)
-    map_html = build_map(ordered, best_name)
+
+    # 接駁星：為每個星座節點配對最近的 YouBike 站（失敗時優雅降級為 None）
+    relay_stars = None
+    if req.show_youbike:
+        nodes = [(c.lat, c.lng) for c in ordered]
+        relay_stars = get_relay_stars(nodes) or None
+
+    map_html = build_map(ordered, best_name, relay_stars)
 
     return RouteResponse(
         status="success",

@@ -150,6 +150,7 @@ function injectMap(mapHtml) {
 async function generateRoute() {
   const budget = +document.getElementById('budgetSlider').value;
   const radius = +document.getElementById('radiusSlider').value;
+  const showYoubike = document.getElementById('showYoubike').checked;
 
   if (!validateBudget(budget)) return;
 
@@ -180,6 +181,7 @@ async function generateRoute() {
         departure_time:       inputTime || null,
         current_day,
         current_time,
+        show_youbike:         showYoubike,
       }),
     });
 
