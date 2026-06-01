@@ -16,6 +16,10 @@ class RouteRequest(BaseModel):
     )
     current_day: Optional[str] = None
     current_time: Optional[str] = None
+    show_youbike: bool = Field(
+        default=False,
+        description="是否在地圖上顯示各節點附近的 YouBike 接駁星。",
+    )
 
     @field_validator("departure_time", "current_time")
     @classmethod

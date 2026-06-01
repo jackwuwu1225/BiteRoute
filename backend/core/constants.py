@@ -59,3 +59,16 @@ MIN_FILTERED  = 3
 MAX_REVIEWS   = 14137
 MO_WEIGHTS    = (0.20, 0.15, 0.15, 0.50)
 DWELL_MINUTES = 45
+
+# --- YouBike 接駁星設定 ---
+YOUBIKE_CITY            = "Tainan"   # TDX 城市代碼
+YOUBIKE_RELAY_RADIUS_M  = 400        # 每個星座節點搜尋最近接駁站的半徑（公尺）
+YOUBIKE_STATION_TTL     = 86400      # 站點靜態資料快取秒數（一天，位置幾乎不變）
+YOUBIKE_AVAIL_TTL       = 60         # 即時車況快取秒數（業界慣例約一分鐘）
+
+# 可借車數 → 接駁星顏色（沿用霓虹色系）
+YOUBIKE_COLOR_MANY      = "#39ff88"  # 車多：亮綠
+YOUBIKE_COLOR_FEW       = "#ffcf4d"  # 車少：琥珀
+YOUBIKE_COLOR_NONE      = "#ff5d5d"  # 無車 / 停駛：暗紅
+YOUBIKE_THRESHOLD_MANY  = 5          # 可借 >= 5 視為車多
+YOUBIKE_THRESHOLD_FEW   = 1          # 可借 >= 1 視為車少
