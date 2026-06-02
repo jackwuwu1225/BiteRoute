@@ -208,6 +208,13 @@ async function generateRoute() {
     document.getElementById('priceBadge').textContent = `$ ${(+data.total_price).toLocaleString()}`;
 
     injectMap(data.map_html);
+
+    // 新增：將本次生成的星座路線資料傳給 Badge Gallery
+    // Badge Gallery 會記住目前可解鎖的星座，等使用者點「完成路線並解鎖」後發放徽章
+    if (window.BiteRouteBadges) {
+      window.BiteRouteBadges.setCurrentRouteFromResponse(data);
+    }
+    
     showState('result');
 
   } catch (err) {
